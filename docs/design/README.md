@@ -1,6 +1,6 @@
 Docs under this page contain some context on how we've iterated on the Reth design
 
-- Goals
+- Performance Objectives
 - Project Layout
 - Database
 - Networking
@@ -8,7 +8,7 @@ Docs under this page contain some context on how we've iterated on the Reth desi
 - Metrics
 - Review of Other Codebases
 
-## Goals
+## Performance Obj
 解决性能瓶颈，Optimizing state access
 
 给定交易处理过程大致如下：
