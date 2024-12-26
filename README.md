@@ -28,7 +28,7 @@ L1需要适当的去中心化，通过CometBFT共识实现，保证所有验证�
 
 (Latency)共识使用尽可能减少端到端延迟的CometBFT调整版本，该延迟以发送请求到接收其提交的响应之间的持续时间来衡量。此性能允许用户以最小的更改从中心化加密货币场所移植交易策略，并通过用户界面为散户用户提供即时反馈。
 
-(Throughput)L1计划支持每秒20,000次操作，包括orders/cancels和liquidations, 原CometBFT上限约为1,000TPS。
+(Throughput)L1计划支持每秒20,000次操作，包括orders/cancels和liquidations.
 
 ## Overveiw
 ### Monoli EVM
@@ -36,10 +36,12 @@ L1需要适当的去中心化，通过CometBFT共识实现，保证所有验证�
 
 
 ### MonoBFT
-> Cosmos CometBFT
+> 由[CometBFT](https://github.com/cometbft/cometbft) Go改编为Rust版本，同时参考了[tendermint-rs](https://github.com/informalsystems/tendermint-rs)
+
 
 ### Orderbook
 L1 state包含每个asset的orderbook
+
 
 ### Oracle
 
@@ -49,5 +51,4 @@ L1 state包含每个asset的orderbook
 
 ## _Reference
 - [Reth](https://github.com/paradigmxyz/reth)
-- [Reth Book](https://reth.rs/) 
-- [CometBFT](https://docs.cometbft.com/v1.0/)
+- [CometBFT](https://github.com/cometbft/cometbft)
