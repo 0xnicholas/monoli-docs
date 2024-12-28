@@ -1,7 +1,9 @@
 use orderbooklib::{dbgp, OrderBook, OrderStatus, Side};
 use rand::Rng;
 
-// note: basic exam
+/**
+* @note: basic exam
+*/
 
 fn main() {
     println!("Creating new Orderbook");
@@ -16,9 +18,9 @@ fn main() {
     for _ in 1..10 {
         for _ in 1..10000 {
             let fr = ob.add_limit_order(Side::Ask, rng.random_range(1..5000), rng.random_range(1..=500));
-            // if matches! {fr.status, OrderStatus::Filled} {
-            //     dbgp!("{:#?}, avg_fill_price {}", fr, fr.avg_fill_price());
-            // }
+            if matches! {fr.status, OrderStatus::Filled} {
+                dbgp!("{:#?}, avg_fill_price {}", fr, fr.avg_fill_price());
+            }
         }
     }
     println!("Done!");
