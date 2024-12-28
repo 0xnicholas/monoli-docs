@@ -1,6 +1,8 @@
 use orderbooklib::{dbgp, OrderBook, OrderStatus, Side};
 use rand::Rng;
 
+// note: basic exam
+
 fn main() {
     println!("Creating new Orderbook");
     let mut ob = OrderBook::new("BTC".to_string());
