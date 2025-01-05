@@ -6,16 +6,6 @@ Monoli Layer1(以下简称L1) 的主要目的是为高性能衍生品交易所�
 ## Motivation
 > [设计文档](./docs/design/README.md)
 
-**成为价格发现的来源**
-
-> Orderbooks is too useful.
-
-|||
-|---|---|
-|AMM| front-running and MEV attacks|
-|RFQ|RFQ solution it is too opaque, and the asymmetry between makers and takers leads to centralization|
-|Orderbooks|Order books are the only tested and sustainable solution at scale, as they let liquidity providers precisely control their risk, leading to capital efficiency and tighter spreads, and it can be decentralized.|
-
 **高性能专用L1**
 
 链下订单薄的validators(如dydx)实际上可能会拥有过多的集中权力，不可行；需要能够完全支持链上订单薄的区块链，但没有一条能满足性能目标的最低延迟和TPS要求。
