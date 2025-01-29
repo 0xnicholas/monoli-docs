@@ -21,13 +21,16 @@ L1需要适当的去中心化，通过CometBFT共识实现，保证所有验证�
 (Throughput)L1计划支持每秒20,000次操作，包括orders/cancels和liquidations.
 
 ## Overveiw
-### Monoli EVM
-> 基于[reth](https://reth.rs/)改写
 
 
-### MonoBFT
-> 由[CometBFT](https://github.com/cometbft/cometbft) Go改编为Rust版本，同时参考了[tendermint-rs](https://github.com/informalsystems/tendermint-rs)
+### L1
 
+早期版本(xp1)基于Cosmos SDK开发
+
+#### MonoBFT
+由[CometBFT](https://github.com/cometbft/cometbft) Go改编为Rust版本，同时参考了[tendermint-rs](https://github.com/informalsystems/tendermint-rs)
+
++ MonoliEVM 基于[reth](https://reth.rs/)改写
 
 ### Orderbook
 L1 state包含每个asset的orderbook
@@ -42,3 +45,4 @@ L1 state包含每个asset的orderbook
 ## _Reference
 - [Reth](https://github.com/paradigmxyz/reth)
 - [CometBFT](https://github.com/cometbft/cometbft)
+- [Cosmos SDK](https://docs.cosmos.network/main/build/building-modules/intro)
