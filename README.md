@@ -25,7 +25,7 @@ L1需要适当的去中心化，通过CometBFT共识实现，保证所有验证�
 
 ### L1
 
-早期版本(xp1)基于Cosmos SDK开发
+早期版本(xp1)基于Cosmos SDK开发，Go版本改写为Rust.
 
 #### MonoBFT
 由[CometBFT](https://github.com/cometbft/cometbft) Go改编为Rust版本，同时参考了[tendermint-rs](https://github.com/informalsystems/tendermint-rs)
