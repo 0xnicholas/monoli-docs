@@ -1,3 +1,5 @@
+[[中文]](README_cn.md)
+
 # About Monoli
 [Monoli]() is a high-performance blockchain L1 designed to create an on-chain liquidity platform and open financial ecosystem. It includes two major projects: [Monoli L1]() and [Monoli Perp DEX]().
 
@@ -16,7 +18,7 @@ L1 is optimized in several key areas to achieve its own superior performance and
 - [TurboCast]()
 - [LiquiBoost]()
 
-and [Gazer](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g) (Monoli L1 Framework & SDK)
+and [Gazer]( https://github.com/0xnicholas/gazer) (Monoli L1 Framework & SDK)
 
 
 ## Monoli DEX
@@ -60,7 +62,7 @@ _Ecosystem Protocols_
 
 _Related Papers_
 - [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h)
-- [Gazer: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g)
+- [Gazer: Monoli L1 Framework & SDK]( https://github.com/0xnicholas/gazer)
 - [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g)
 - [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
 - [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink)
