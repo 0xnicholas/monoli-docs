@@ -1,48 +1,72 @@
-# Monoli-L1
-> disappointing to see how far behind defi was compared to its centralized counterparts. @nicholaslico
+# About Monoli
+[Monoli]() is a high-performance blockchain L1 designed to create an on-chain liquidity platform and open financial ecosystem. It includes two major projects: [Monoli L1]() and [Monoli Perp DEX]().
 
-Monoli Layer1(以下简称L1) 的主要目的是为高性能衍生品交易所而构建的，它受到[perps](https://github.com/0xnicholas/perps) DEX(orderbook model)的需求推动，这使得Monoli有别于通用L1设计，为DEX做了关键优化。
+## Monoli L1
+Monoli L1 optimizes blockchain performance by enhancing the consensus and execution layers respectively, providing a web2 level on-chain experience for Defi, high-frequency trading and dapps. The core insight is that existing blockchains have bottlenecks in high transaction throughput, low latency, and cross-chain interoperability to compete for the real-time performance and liquidity needs of CEXs.
 
-## Motivation
-> [设计文档](./docs/design/README.md)
+The idea of L1 is to optimize the consensus mechanism by performing consensus and execution independently, using deterministic transaction ordering and asynchronous execution to complete consensus quickly. At the execution layer, scalability, transaction efficiency and cross-chain interoperability are enhanced by designing a VM-agnostic execution framework. Meanwhile, in the execution environment, multiple VMs are integrated through Loom, enabling developers to build on any VM, so that smart contracts running on different chains perform consistently in terms of execution logic, state management, and so on, realizing application migration and development without the need to change code.
 
-**高性能专用L1**
+L1 is optimized in several key areas to achieve its own superior performance and omni-chain execution enhancements, and to greatly improve the decentralization/scalability trade-off. These major areas of improvement are as follows:
 
-链下订单薄的validators(如dydx)实际上可能会拥有过多的集中权力，不可行；需要能够完全支持链上订单薄的区块链，但没有一条能满足性能目标的最低延迟和TPS要求。
+- [MonoBFT]()
+- [TVA]()
+- [Execution Framework]()
+- [Loom]()
+- [MonoDB]()
+- [TurboCast]()
+- [LiquiBoost]()
 
-L1需要适当的去中心化，通过CometBFT共识实现，保证所有验证者交易顺序一致，状态包括所有交易状态，不依赖链下订单薄。L1的状态转化逻辑借鉴了高性能NFT系统中使用的模式和抽象。L1专注于运行高性能EX，不支持通用智能合约。
-
-(PoS)L1 由PoS机制保护，L1 的staking和slashing机制与其他 Cosmos 链的工作方式类似。
-
-(Fees)L1的费用将比通用L1每笔操作的gas值低几个数量级，这是因为L1仅运行优化的`exchange state machine`而不是通用的智能合约。而交易费则接近于0。
-
-(Latency)共识使用尽可能减少端到端延迟的CometBFT调整版本，该延迟以发送请求到接收其提交的响应之间的持续时间来衡量。此性能允许用户以最小的更改从中心化加密货币场所移植交易策略，并通过用户界面为散户用户提供即时反馈。
-
-(Throughput)L1计划支持每秒20,000次操作，包括orders/cancels和liquidations.
-
-## Overveiw
+and [Gazer](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g) (Monoli L1 Framework & SDK)
 
 
-### L1
+## Monoli DEX
+Monoli DEX is the native Perp DEX for the Monoli L1 network, based on order thinning and fast transaction processing. Designed to enable high-frequency trading with virtually the same user experience as centralized exchanges, and supports a leveraged trading environment of over 100 different token pairs.
 
-早期版本(xp1)基于Cosmos SDK开发，Go版本改写为Rust.
+Monoli DEX offers a powerful toolbox for high-frequency traders, professional traders and those looking to speculate on the markets using leverage and perpetual contracts. Through its innovative technical architecture and mechanisms, it makes crypto derivatives trading more efficient, secure and fair.
 
-#### MonoBFT
-由[CometBFT](https://github.com/cometbft/cometbft) Go改编为Rust版本，同时参考了[tendermint-rs](https://github.com/informalsystems/tendermint-rs)
+DEX's technological foundation is made possible by the efficient features of Monoli L1, MonoBFT Optimized Consensus, which is structurally optimized for end-to-end latency; the Order Book, which leverages off-chain matching and Fast Block to dramatically optimize trading efficiency; and the Loom system, which provides a unified execution environment and efficient interoperability to further reduce trading latency. This performance enables traders to engage in automated strategies and high-frequency trading.
 
-+ MonoliEVM 基于[reth](https://reth.rs/)改写
+Monoli DEX offers the following four trading methods:
+1. Market order: Immediate execution of a trade at the current market price.
+2. Limit order: Execute a trade at a specified desired price.
+3. Scale order: in the set price range to establish and execute multiple limit orders.
+4. TWAP: A single order is divided into multiple orders to execute transactions within a fixed time interval.
 
-### Orderbook
-L1 state包含每个asset的orderbook
+In addition to token-specific perpetual contracts, Monoli DEX offers the following types of trading instruments:
+- Index Perpetual Contracts: Offers perpetual futures trading on various blockchain ecosystem indices, such as an index tracking the average floor price of a specific blue chip NFT pool (NFTI-USD).
+- [Monogram](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe): Asset tokenization for easy access and passive income contracts.
+- [Vaults](): Provide liquidity and earn yields.
+
+Most Orderbook-based DEXs either lack their own networks or have architectures that focus only on trading functionality, thus failing to form a subordinate ecosystem to synergize with DEXs. In contrast, Monoli, as a Layer 1 network, is not limited to DEX, but envisions a large ecosystem that combines on-chain and DEX users, creating a popular network effect that cannot be achieved by a single DEX through the dApps in the ecosystem, the native tokens issued by MEPs, and the introduction of Monoli's multi-VM hybrid execution.
+
+## Resources
+
+Website: https://monoli.xyz/
+
+_L1_
+- [Monoli L1 [draft v0.7.1]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+- [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
+- [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
 
 
-### Oracle
+_DEX_
+- [Monoli Perp DEX [v1.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
+- [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
+- [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
+- [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
-### Bridge
-> run with an EVM bridge
+_Ecosystem Protocols_
+- [Monogram](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe) (Asset tokenization and yield protocols)
 
-
-## _Reference
-- [Reth](https://github.com/paradigmxyz/reth)
-- [CometBFT](https://github.com/cometbft/cometbft)
-- [Cosmos SDK](https://docs.cosmos.network/main/build/building-modules/intro)
+_Related Papers_
+- [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h)
+- [Gazer: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g)
+- [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g)
+- [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
+- [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink)
+- [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)
+- [[Issue] Fundamental enhancement of the Monoli execution architecture, replacing the rWASM Runtime with the RISC-V Runtime](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink)
+- [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink)
+- [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink)
+- [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)
+- [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink)
