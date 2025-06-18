@@ -1,5 +1,5 @@
 # About Monoli
-[Monoli]() 是一个高性能区块链 L1，旨在创建一个链上流动性平台和开放式金融生态系统。它包括两个主要项目： [Monoli L1]()和[Monoli Perp DEX]()。
+[Monoli]() 是一个高性能区块链 L1，旨在创建一个链上流动性平台和结构化金融生态系统。它包括三个主要项目： [Monoli L1]()，[Monoli Perp DEX]()和[Monoli Vaults]()。
 
 ## Monoli L1
 Monoli L1旨在通过分别加强共识和执行层来优化区块链性能，为DeFi、高频交易和dApp提供web2级别的链上体验。其核心洞察在于，现有区块链在高交易吞吐量、低延迟和跨链互操作性方面存在瓶颈，难以竞争CEXs的实时性能和流动性需求。
@@ -31,8 +31,7 @@ Monoli DEX提供以下四种交易方式：
 
 除了特定代币的永续合约，Monoli DEX 还提供以下类型的交易工具：
 - 指数永续合约：提供各种区块链生态系统指数的永续期货交易，例如追踪特定蓝筹 NFT 集合平均底价的指数 (NFTI-USD)。
-- [Monogram](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe)：资产代币化便捷存取及被动收益合约。
-- [Vaults]()： 提供流动性，获取收益。
+- [Vaults]()：包括做市策略Vault（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；结构化Vault（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
 大多数以 Orderbook 为基础的DEX 不是缺乏自己的网络，就是其架构也只专注于交易功能，因此无法形成从属的生态系统，与 DEX 产生协同效应。相比之下，Monoli 作为 Layer 1网络，并不仅限于DEX，而是愿景建立一个庞大的生态系统，结合链上用户与DEX用户，通过生态内各dApp、利用MEP 发行的原生代币、以及Monoli多VM混合执行的引进，创造出单一DEX无法达到的流行性网络效应。
 
@@ -63,6 +62,7 @@ _相关文档_
 - [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink)  对透明交易市场的正面分析
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)  链上暗池讨论
 - [[Issue] Fundamental enhancement of the Monoli execution architecture, replacing the rWASM Runtime with the RISC-V Runtime](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink) 执行层RISC-V Runtime建设，替代原rWASM Runtime
+- [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9  从TradFi中借鉴结构化金融产品用于DeFi，以及Monoli结构化Vaults MTP和MCD的设计
 - [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink) 链抽象和全链互操作性的早期思考
 - [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink)  实现web3大规模采用需要解决的问题，指引Monoli的愿景
 - [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)  Monoli简要概述

@@ -1,7 +1,7 @@
 [[中文]](README_cn.md)
 
 # About Monoli
-[Monoli]() is a high-performance blockchain L1 designed to create an on-chain liquidity platform and open financial ecosystem. It includes two major projects: [Monoli L1]() and [Monoli Perp DEX]().
+[Monoli]() is a high-performance blockchain L1 designed to create an on-chain liquidity platform and structured finance ecosystem. It includes three major projects: [Monoli L1](), [Monoli Perp DEX]() and [Monoli Vaults]().
 
 ## Monoli L1
 Monoli L1 optimizes blockchain performance by enhancing the consensus and execution layers respectively, providing a web2 level on-chain experience for Defi, high-frequency trading and dapps. The core insight is that existing blockchains have bottlenecks in high transaction throughput, low latency, and cross-chain interoperability to compete for the real-time performance and liquidity needs of CEXs.
@@ -36,8 +36,7 @@ Monoli DEX offers the following four trading methods:
 
 In addition to token-specific perpetual contracts, Monoli DEX offers the following types of trading instruments:
 - Index Perpetual Contracts: Offers perpetual futures trading on various blockchain ecosystem indices, such as an index tracking the average floor price of a specific blue chip NFT pool (NFTI-USD).
-- [Monogram](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe): Asset tokenization for easy access and passive income contracts.
-- [Vaults](): Provide liquidity and earn yields.
+- [Vaults](): Includes Market Making Strategy Vaults (user-defined market making and platform market making MLP, Monoli Liquidity Provider); Structured Vaults (MTP, Monoli Tranche Perp Vault), and Credit Default Risk Derivatives Vaults (MCD, Monoli Credit Default Vault).
 
 Most Orderbook-based DEXs either lack their own networks or have architectures that focus only on trading functionality, thus failing to form a subordinate ecosystem to synergize with DEXs. In contrast, Monoli, as a Layer 1 network, is not limited to DEX, but envisions a large ecosystem that combines on-chain and DEX users, creating a popular network effect that cannot be achieved by a single DEX through the dApps in the ecosystem, the native tokens issued by MEPs, and the introduction of Monoli's multi-VM hybrid execution.
 
@@ -69,6 +68,7 @@ _Related Papers_
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)
 - [[Issue] Fundamental enhancement of the Monoli execution architecture, replacing the rWASM Runtime with the RISC-V Runtime](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink)
 - [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink)
+- [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9)
 - [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink)
 - [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)
 - [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink)
