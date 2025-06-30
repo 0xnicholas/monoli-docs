@@ -57,6 +57,8 @@ _Ecosystem Protocols_
 _相关文档_
 - [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h)  Monoli项目财务预测
 - [Gazer: Monoli L1 Framework & SDK]( https://github.com/0xnicholas/gazer) Gazer, Monoli L1的核心开发框架
+
+- [[Issue] Controls over perpetual contract trading](https://nicholas.feishu.cn/wiki/C4GOwP5aEiX6BskixNHcx1sMn2b?from=from_copylink) index price, mark price, funding rate 永续合约主要控制量的不同设计
 - [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g)  并行执行扩容专题
 - [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh) 1slot/1s实现最终性的方案
 - [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink)  对透明交易市场的正面分析
