@@ -1,76 +1,108 @@
-[[中文]](README_cn.md)
+[[中文]](/README_cn.md)
 
-# About Monoli
-[Monoli]() is a high-performance blockchain L1 designed to create an on-chain liquidity platform and structured finance ecosystem. It includes three major projects: [Monoli L1](), [Monoli Perp DEX]() and [Monoli Vaults]().
+> This index outlines the major research tracks and initiatives under the Monoli project.
+
+## About Monoli
+
+**Monoli** is a high-performance Layer 1 blockchain and its associated native DeFi ecosystem, developed under [Lico labs](). Currently in an intensive R\&D phase, Monoli aims to create an ultra-efficient blockchain infrastructure and a structured financial ecosystem. The Monoli ecosystem consists of three core pillars: [Monoli L1](), [Monoli Perp DEX](), and [Monoli Vaults]().
 
 ## Monoli L1
-Monoli L1 optimizes blockchain performance by enhancing the consensus and execution layers respectively, providing a web2 level on-chain experience for Defi, high-frequency trading and dapps. The core insight is that existing blockchains have bottlenecks in high transaction throughput, low latency, and cross-chain interoperability to compete for the real-time performance and liquidity needs of CEXs.
 
-The idea of L1 is to optimize the consensus mechanism by performing consensus and execution independently, using deterministic transaction ordering and asynchronous execution to complete consensus quickly. At the execution layer, scalability, transaction efficiency and cross-chain interoperability are enhanced by designing a VM-agnostic execution framework. Meanwhile, in the execution environment, multiple VMs are integrated through Loom, enabling developers to build on any VM, so that smart contracts running on different chains perform consistently in terms of execution logic, state management, and so on, realizing application migration and development without the need to change code.
+Monoli is designed to push the performance limits of Layer 1 blockchains by decoupling and independently optimizing core components—such as consensus, execution, and networking—while maintaining *variable-speed coordination* between layers. This architectural approach enables Monoli to align with the long-term evolutionary trajectory of blockchain technology while achieving best-in-class infrastructure in every stage.
 
-L1 is optimized in several key areas to achieve its own superior performance and omni-chain execution enhancements, and to greatly improve the decentralization/scalability trade-off. These major areas of improvement are as follows:
+With a target throughput of **120,000 TPS**, Monoli aims to deliver a Web2-grade user experience for DeFi, high-frequency trading (HFT), and on-chain applications. Key innovations and enhancements include:
 
-- [MonoBFT]()
-- [TVA]()
-- [Execution Framework]()
-- [Loom]()
-- [MonoDB]()
-- [TurboCast]()
-- [LiquiBoost]()
+* **[MonoBFT]()**, A high-frequency finality BFT protocol built on DAG structures (earlier based on a HotStuff derivative).
+* **[TVA]()**, A time-verifiable asynchronous execution model that deterministically pre-orders transactions while enabling asynchronous execution.
+* **[ForceSync]()**, Monoli’s proprietary state and block synchronization system that ensures robust node consistency.
+* **[Execution Framework]()**, A VM-agnostic execution environment supporting diverse smart contract runtimes.
+* **[Loom]()**, A hybrid VM execution network, centered around **LoomVM**, a secure and deterministic bytecode virtual machine compiled from RISC-V (replacing rWASM). It supports multi-VM equivalent execution environments.
+* **[MonoDB]()**, A multi-tiered database built on top of RocksDB, optimized for performance and scalability.
+* **[TurboCast]()**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
+* **[LiquiBoost]()**, A native on-chain incentive protocol designed to reward both validators and developers.
 
-and [Gazer]( https://github.com/0xnicholas/gazer) (Monoli L1 Framework & SDK)
-
+In addition, Monoli provides a modular Rust SDK and framework named **[Gazer](https://github.com/0xnicholas/gazer)** for building custom blockchain systems.
 
 ## Monoli DEX
-Monoli DEX is the native Perp DEX for the Monoli L1 network, based on order thinning and fast transaction processing. Designed to enable high-frequency trading with virtually the same user experience as centralized exchanges, and supports a leveraged trading environment of over 100 different token pairs.
 
-Monoli DEX offers a powerful toolbox for high-frequency traders, professional traders and those looking to speculate on the markets using leverage and perpetual contracts. Through its innovative technical architecture and mechanisms, it makes crypto derivatives trading more efficient, secure and fair.
+**Monoli DEX** is the native perpetual futures exchange on the Monoli L1 network. Built on a high-speed orderbook matching engine, it aims to deliver near-centralized exchange performance for high-frequency and professional traders. It supports leveraged trading for over 100 token pairs.
 
-DEX's technological foundation is made possible by the efficient features of Monoli L1, MonoBFT Optimized Consensus, which is structurally optimized for end-to-end latency; the Order Book, which leverages off-chain matching and Fast Block to dramatically optimize trading efficiency; and the Loom system, which provides a unified execution environment and efficient interoperability to further reduce trading latency. This performance enables traders to engage in automated strategies and high-frequency trading.
+Designed for power users—quantitative traders, professionals, and leverage speculators—Monoli DEX maximizes efficiency, fairness, and execution speed by leveraging the full performance capabilities of Monoli L1.
 
-Monoli DEX offers the following four trading methods:
-1. Market order: Immediate execution of a trade at the current market price.
-2. Limit order: Execute a trade at a specified desired price.
-3. Scale order: in the set price range to establish and execute multiple limit orders.
-4. TWAP: A single order is divided into multiple orders to execute transactions within a fixed time interval.
+The exchange supports four primary order types:
 
-In addition to token-specific perpetual contracts, Monoli DEX offers the following types of trading instruments:
-- Index Perpetual Contracts: Offers perpetual futures trading on various blockchain ecosystem indices, such as an index tracking the average floor price of a specific blue chip NFT pool (NFTI-USD).
-- [Vaults](): Includes Market Making Strategy Vaults (user-defined market making and platform market making MLP, Monoli Liquidity Provider); Structured Vaults (MTP, Monoli Tranche Perp Vault), and Credit Default Risk Derivatives Vaults (MCD, Monoli Credit Default Vault).
+1. **Market Orders** – Execute immediately at the best available price.
+2. **Limit Orders** – Execute at a user-specified price.
+3. **Scale Orders** – Place multiple limit orders across a price range.
+4. **TWAP** – Time-weighted average price execution over intervals.
 
-Most Orderbook-based DEXs either lack their own networks or have architectures that focus only on trading functionality, thus failing to form a subordinate ecosystem to synergize with DEXs. In contrast, Monoli, as a Layer 1 network, is not limited to DEX, but envisions a large ecosystem that combines on-chain and DEX users, creating a popular network effect that cannot be achieved by a single DEX through the dApps in the ecosystem, the native tokens issued by MEPs, and the introduction of Monoli's multi-VM hybrid execution.
+Beyond standard perps, Monoli DEX also offers structured perpetual products:
+
+* **Index Perps** – Trade ecosystem indices like NFT floor price composites (e.g., *NFTI-USD*).
+* **[Vaults]()**:
+
+  * Market-making vaults (user-customized and platform-driven via **MLP**, Monoli Liquidity Provider).
+  * Structured derivative vaults (**MTP**, Monoli Tranche Perp Vault).
+  * Credit risk protection vaults (**MCD**, Monoli Credit Default Vault).
 
 ## Resources
 
-Website: https://monoli.xyz/
+**Website**: [https://monoli.xyz](https://monoli.xyz)
 
-_L1_
-- [Monoli L1 [draft v0.7.1]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
-- [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
-- [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
+### *L1*
 
+* [Monoli L1 \[draft v0.8\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+* [Monoli L1 \[draft v0.7.2\]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc)
+* [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
+* [Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
 
-_DEX_
-- [Monoli Perp DEX [v1.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
-- [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
-- [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
-- [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
+### *DEX*
 
-_Ecosystem Protocols_
-- [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink) Synthetic dollar protocol, $M stablecoin
+* [Monoli Perp DEX \[v1.2\]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
+* [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
+* [DEX Risk Management and Case Studies](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
+* [DEX Technical Documentation](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
-_Related Papers_
-- [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h) Financial analysis of the Monoli project
-- [Gazer: Monoli L1 Framework & SDK]( https://github.com/0xnicholas/gazer) The core development framework for Monoli L1
-- [[Issue] DPS Benchmarking Methods](https://nicholas.feishu.cn/wiki/YRKUwMpigi2LYvkeV3xcv27Xnyd?from=from_copylink) Throughput and latency as performance considerations, and AMM as an operational benchmark for system testing and analysis
-- [[Issue] Controls over perpetual contract trading](https://nicholas.feishu.cn/wiki/C4GOwP5aEiX6BskixNHcx1sMn2b?from=from_copylink) index price, mark price, funding rate, diffrent designs of the main control variables for perpetual contract trading
-- [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g) Parallel execution scaling topic
-- [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh) 1slot/1second solution to achieve finality 
-- [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink) Positive analysis of transparent trading markets
-- [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink) On-chain dark pool discussion
-- [[Issue] Fundamental enhancement of the Monoli execution architecture, replacing the rWASM Runtime with the RISC-V Runtime](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink) Execution layer RISC-V Runtime build, replacing the original rWASM Runtime
-- [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9) Reference to TradFi's structured financial products for DeFi (Monoli Structured Vaults, MTP, MCD)
-- [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink) Early thoughts on chain abstraction and omni-chain interoperability
-- [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink) Problems that need to be solved to achieve web3 mass adoption, guiding Monoli's vision
-- [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)  Monoli Brief Overview
-- [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink)  Record of Monoli enhancement proposals
+### *Ecosystem Protocols*
+
+* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic stablecoin protocol powered by \$M.
+
+### Research Topics
+
+#### *Consensus*
+
+* [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): Adopts DAG-based consensus for high-frequency environments; comparison with HotStuff.
+* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): Early research on MonoBFT based on HotStuff series.
+* [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): Achieving 1-slot, 1-second finality.
+
+#### *Execution*
+
+* [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): Merging DAG concurrency with blockchain finality guarantees.
+* [\[Paper\] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh)
+* [\[Issue\] From RISC-V ELF to LBC](https://nicholas.feishu.cn/wiki/Bgr8wq3XdioEJwkLYgjcLDWNnVb): Building a compiler and VM runtime from RISC-V ELF to Loom Bytecode (LBC).
+* [\[Issue\] Loom Runtime Architecture](https://nicholas.feishu.cn/wiki/LdzZwdOGXiYWM3k1ZsMcTVJ4nAc): VM interpreter, memory model, and hostcall system.
+* [\[Issue\] Intra-chain Parallelism](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g): Native scaling through intra-chain parallelism.
+* [\[Issue\] Multi-VM Equivalence and Intermediate Representation](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf): Unified intermediate representation for equivalent multi-VM execution (e.g., rWASM).
+
+#### *Architecture*
+
+* [Gazer](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Modular Rust SDK for building Monoli chains.
+* [\[Issue\] Rebuilding vs Refining](#): Comparing engineering-optimized vs innovation-driven architecture paths.
+* [\[Issue\] What's the Ideal Block Size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU) Finding the Optimal Block Size and Scalability Trade-offs in High-Performance Blockchains.
+* [\[Issue\] Native Accounts for On-Chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT) Account Model Designs in Representative Blockchains and Monoli's Design Exploration.
+
+#### *DEX*
+
+* [\[Issue\] DPS Benchmarking Methods](https://nicholas.feishu.cn/wiki/YRKUwMpigi2LYvkeV3xcv27Xnyd): Measuring throughput and latency using AMM-style benchmarks.
+* [\[Issue\] Controls Over Perpetual Contract Trading](https://nicholas.feishu.cn/wiki/C4GOwP5aEiX6BskixNHcx1sMn2b): Design of index price, mark price, and funding rate mechanisms.
+* [\[Issue\] Why Fully Transparent Trading Markets Are Beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg) Benefits and Merits of Transparent Trading Markets.
+* [\[Issue\] Feasibility of On-Chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd) Design and Implications of On-Chain Dark Pool Mechanisms.
+* [\[Paper\] Structured Finance of TradFi Inspires DeFi (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9): Applying structured finance instruments (MTP & MCD) in DeFi.
+
+#### *Others*
+
+* [Monoli Financial Forecast](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h) Financial Projections for Monoli's Business Operations.
+* [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb)
+* [Monoli Enhancement Proposals (MEPs)](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf)
+* [\[Paper\] From Multi-chain Integration to Unified Operations](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc): Early explorations of omnichain infrastructure.
+* [\[Paper\] The MA End Game – Massive Adoption Capability](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg): Vision for enabling mass adoption in Web3, a guiding principle for Monoli.
