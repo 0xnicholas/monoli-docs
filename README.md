@@ -65,7 +65,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### *Ecosystem Protocols*
 
-* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic stablecoin protocol powered by \$M.
+* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): L1 native synthetic dollar protocol.($M stablecoin)
 
 ### Research Topics
 

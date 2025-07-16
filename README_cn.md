@@ -1,6 +1,6 @@
 > 该文档索引包括Monoli主要研究项目和课题
 
-# About Monoli
+## About Monoli
 Monoli代表了[Lico labs]()研究的一个高性能区块链L1和其主要DeFi生态项目，目前处于产研深入探索阶段。Monoli旨在创建一个超高效区块链基础设施和结构化金融生态系统。它包括三个主要项目： [Monoli L1]()，[Monoli Perp DEX]()及[Monoli Vaults]()。
 
 ## Monoli L1
@@ -55,7 +55,7 @@ _DEX_
 - [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
 _Ecosystem Protocols_
-- [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink) 合成美元协议. $M stablecoin
+- [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink) L1原生合成美元协议（$M stablecoin）
 
 _专题_
 
