@@ -99,7 +99,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [\[Issue\] Feasibility of On-Chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd) Design and Implications of On-Chain Dark Pool Mechanisms.
 * [\[Paper\] Structured Finance of TradFi Inspires DeFi (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9): Applying structured finance instruments (MTP & MCD) in DeFi.
 
-#### *Others*
+#### *OTHER*
 
 * [Monoli Financial Forecast](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h) Financial Projections for Monoli's Business Operations.
 * [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb)

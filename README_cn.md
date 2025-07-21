@@ -41,30 +41,30 @@ Monoli DEX提供以下四种交易方式：
 
 Website: https://monoli.xyz/
 
-_L1_
+### L1
 - [Monoli L1 [draft v0.8]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 - [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
 
 
-_DEX_
+### *DEX*
 - [Monoli Perp DEX [v1.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 - [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
 - [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
 - [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
-_Ecosystem Protocols_
+### *Ecosystem Protocols*
 - [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink) L1原生合成美元协议（$M stablecoin）
 
-_专题_
+### 专题
 
-Consensus
+#### *Consensus*
 - [[Issue] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc?from=from_copylink) 采用DAG结构改进共识机制，并对比Hotstuff方案
 - [[Issue] High performance, fast finality, fork-resistant BFT Consensus](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf?from=from_copylink) 较早版本对MonoBFT的研究，基于HotStuff系列
 - [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh) 1slot/1s实现最终性的方案
 
-Execution
+#### *Execution*
 - [[Issue] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e?from=from_copylink) DAG + 区块链混合结构的执行模型
 - [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink) 链上智能合约执行的安全确定性字节码虚拟机LoomVM的设计与实现
 - [[Issue] From RISC-V ELF to LBC: Building a Practical Compiler and VM Runtime for the Loom Execution Stack](https://nicholas.feishu.cn/wiki/Bgr8wq3XdioEJwkLYgjcLDWNnVb?from=from_copylink) RISC-V ELF到Loom Bytecode自定义指令集Compiler
@@ -72,21 +72,20 @@ Execution
 - [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g) 并行执行扩容专题分析
 - [[Issue] Multi-VM Equivalent Execution Methods and an Intermediate Representation in a Unified Execution Environment](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf?from=from_copylink) 多VM等效执行的一种中间表示(rWASM)
 
-Architecture
+#### *Architecture*
 - [Gazer: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g?from=from_copylink) Gazer是一个Rust框架，用于以模块化和可扩展的方式构建区块链。它是一组用于构建Monoli链的库和原语
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
 - [[Issue] What's the ideal block size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU?from=from_copylink) 寻找高性能链中最佳区块大小与可扩展性
 - [[Issue] Native Accounts for On-chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT?from=from_copylink) 讨论不同代表性区块链的账户模型设计，Monoli Accounts设计探索
 
-DEX
+#### *DEX*
 - [[Issue] DPS Benchmarking Methods](https://nicholas.feishu.cn/wiki/YRKUwMpigi2LYvkeV3xcv27Xnyd?from=from_copylink) 以吞吐量和延迟为性能考量，并以AMM为操作基准进行系统测试分析
 - [[Issue] Controls over perpetual contract trading](https://nicholas.feishu.cn/wiki/C4GOwP5aEiX6BskixNHcx1sMn2b?from=from_copylink) index price, mark price, funding rate 永续合约交易主要控制变量的不同设计
 - [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink) 对透明交易市场的正面分析
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)  链上暗池讨论
 - [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9)  从TradFi中借鉴结构化金融产品用于DeFi，以及Monoli结构化Vaults MTP和MCD的设计
 
-
-Others
+#### *OTHER*
 - [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h)  Monoli项目财务预测
 - [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)  Monoli简要概述
 - [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink) Monoli改进提案记录
