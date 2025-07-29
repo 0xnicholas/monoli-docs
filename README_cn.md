@@ -41,8 +41,8 @@ Monoli DEX提供以下四种交易方式：
 
 Website: https://monoli.xyz/
 
-### L1
-- [Monoli L1 [draft v0.8]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+### *L1*
+- [Monoli L1 [draft v0.8.1]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 - [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -54,28 +54,62 @@ Website: https://monoli.xyz/
 - [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
 - [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
-### *Ecosystem Protocols*
-- [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink) L1原生合成美元协议（$M stablecoin）
+### *Ecosystem*
+* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。
 
-### 专题
+* [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
+
+* [Sunwell](): Sunwell是一个原生的Monoli协议，用于在链上构建结构化金融原语，通过金融工程和自定义设计实现可组合的高收益DeFi产品，为”链上华尔街“愿景提供基础。
+
+* [Torus](): Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
+
+* [Monoli Bridge](): Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
+
+* [Octa](): 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
+
+* [Bagel Wallet]():一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
+
+### Papers
 
 #### *Consensus*
-- [[Issue] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc?from=from_copylink) 采用DAG结构改进共识机制，并对比Hotstuff方案
-- [[Issue] High performance, fast finality, fork-resistant BFT Consensus](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf?from=from_copylink) 较早版本对MonoBFT的研究，基于HotStuff系列
-- [[Issue] 1 slot, 1s finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh) 1slot/1s实现最终性的方案
+
+* [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, 弱共识理念提出，其中基于dag的确定性执行（TVA）定义了交易顺序，而共识层只提交快照哈希，从而将排序与共识解耦。
+
+* [[_Issue] Consensus-Free Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过BFT广播和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
+
+* [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): 采用DAG结构改进共识机制，并对比Hotstuff方案。
+
+* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): 较早版本对MonoBFT的研究，基于HotStuff系列。
+
+* [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): 1slot/1s实现最终性的方案
 
 #### *Execution*
-- [[Issue] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e?from=from_copylink) DAG + 区块链混合结构的执行模型
-- [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink) 链上智能合约执行的安全确定性字节码虚拟机LoomVM的设计与实现
-- [[Issue] From RISC-V ELF to LBC: Building a Practical Compiler and VM Runtime for the Loom Execution Stack](https://nicholas.feishu.cn/wiki/Bgr8wq3XdioEJwkLYgjcLDWNnVb?from=from_copylink) RISC-V ELF到Loom Bytecode自定义指令集Compiler
-- [[Issue] Loom Runtime Architecture: From Bytecode Execution to Blockchain Integration](https://nicholas.feishu.cn/wiki/LdzZwdOGXiYWM3k1ZsMcTVJ4nAc?from=from_copylink) 设计 LoomVM Runtime 核心结构（Interpreter + Memory model + Hostcall system）
-- [[Issue] Intra-chain parallelism, primary solution for native scaling](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g) 并行执行扩容专题分析
-- [[Issue] Multi-VM Equivalent Execution Methods and an Intermediate Representation in a Unified Execution Environment](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf?from=from_copylink) 多VM等效执行的一种中间表示(rWASM)
+* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): 探索将TVA集成到基于dag的区块链中，在不依赖共识层排序的情况下实现确定性、可验证的交易排序，实现高通量的并行执行。
+
+* [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink): 提出一种面向链上执行的安全确定性字节码虚拟机LoomVM，将RISC-V二进制文件转换为可验证、gas感知的字节码，以实现在Monoli区块链中高效、可分析、zk友好的智能合约执行。
+
+* [[Issue] Abstract Execution in Blockchain: A Study on VM-Agnostic Architecture Design](https://nicholas.feishu.cn/wiki/O3ebwHIPJiH5DykdHSsccL6xn6d?from=from_copylink): 研究抽象执行体系结构，通过与虚拟机无关的、模块化的、开放的、可组合的、跨不同区块链系统的执行来隐藏区块链复杂性。
+
+* [[Issue] Shared Execution as a Public Good:  Scalable, Permissionless, and Shared Execution for Multi-VM Systems](https://nicholas.feishu.cn/wiki/HaBCwYiiGiodqrk0bWCcEENWn1g?from=from_copylink): 探索了Loom如何作为公共产品实现共享执行——支持在开放执行网络中跨异构虚拟机的可扩展、免许可执行。
+
+* [[Issue] Multi-VM Equivalent Execution Methods and an Intermediate Representation in a Unified Execution Environment](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf): 全面概述了Loom， Monoli的统一执行环境，多虚拟机等效执行和中间表示在实现跨虚拟机兼容性方面的作用。
+
+* [[Agenda] Planning the Monoli Blockchain Smart Contract Language](https://nicholas.feishu.cn/wiki/AcMuwXbfZiBHaqkbox0comGnnZc?from=from_copylink): 定义Monoli基于Rust的智能合约语言的需求、架构和路线图，以及支持Rust和Solidity智能合约的虚拟机。
+
+* [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): DAG + 区块链混合结构的执行模型。
+
+* [\[Issue\] Intra-chain Parallelism](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g): 并行执行扩容专题分析
+
+#### *DB, DA*
+* [[Issue] Designing a DAG-Compatible, Multi-VM Scalable Storage Layer for Monoli](https://nicholas.feishu.cn/wiki/AjMAwGpTaim0NjkHbTJctRcznmk?from=from_copylink): Monoli可扩展的、兼容dag的存储层的设计探索，以支持多虚拟机执行。
 
 #### *Architecture*
 - [Gazer: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g?from=from_copylink) Gazer是一个Rust框架，用于以模块化和可扩展的方式构建区块链。它是一组用于构建Monoli链的库和原语
+
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
+
 - [[Issue] What's the ideal block size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU?from=from_copylink) 寻找高性能链中最佳区块大小与可扩展性
+
 - [[Issue] Native Accounts for On-chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT?from=from_copylink) 讨论不同代表性区块链的账户模型设计，Monoli Accounts设计探索
 
 #### *DEX*
@@ -85,9 +119,16 @@ Website: https://monoli.xyz/
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)  链上暗池讨论
 - [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9)  从TradFi中借鉴结构化金融产品用于DeFi，以及Monoli结构化Vaults MTP和MCD的设计
 
+
+* [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): 资产代币化和原生收益率逻辑如何影响链上结构性产品，将DeFi创新与传统金融工程结合起来的研究。
+
+* [[Issue] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9?from=from_copylink): 探索来自TradFi的结构化金融原语如何启发DeFi中的多层衍生协议，使Monoli上的更复杂、可组合的金融产品成为可能。
+
+* [[Paper] Plaid: Optimizing Decentralized Central Limit Orderbooks: Incentive Mechanisms and Matching Engine Efficiency](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid提供了一个高性能，低延迟的链上CLOB协议，由Monoli提供支持，作为一个低成本的公共产品，以增强生态系统的流动性和DeFi用户体验。
+
 #### *OTHER*
 - [Financial Statement for Monoli](https://nicholas.feishu.cn/wiki/GtTGwvHO0ii0zYkdpWqcsO5dn3h)  Monoli项目财务预测
 - [Monoli Litepaper](https://nicholas.feishu.cn/wiki/In06wTQ4zi7zM1kQTFcc8cklnVb?from=from_copylink)  Monoli简要概述
 - [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink) Monoli改进提案记录
 - [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink) 链抽象和全链互操作性的早期思考
-- [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink)  实现web3大规模采用需要解决的问题，指引了Monoli的愿景
+- [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink) 实现web3大规模采用需要解决的问题，早期指引了Monoli的愿景

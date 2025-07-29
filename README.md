@@ -51,7 +51,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### *L1*
 
-* [Monoli L1 \[draft v0.8\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+* [Monoli L1 \[draft v0.8.1\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 * [Monoli L1 \[draft v0.7.2\]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc)
 * [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 * [Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -63,41 +63,76 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [DEX Risk Management and Case Studies](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
 * [DEX Technical Documentation](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
-### *Ecosystem Protocols*
+### *Ecosystem*
+* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic dollar protocol on Monoli, providing a crypto-native stablecoin backed by delta-neutral derivative strategies. $M combines peg stability with intrinsic yield, making it a robust foundation for on-chain financial applications.
 
-* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): L1 native synthetic dollar protocol.($M stablecoin)
+* [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid is Monoli’s native on-chain CLOB protocol that powers unified, high-efficiency liquidity for DeFi applications, offering precision trading and forming a share liquidity layer for Monoli’s on-chain financial ecosystem.
 
-### Research Topics
+* [Sunwell](): Sunwell is a native Monoli protocol for building structured finance primitives on-chain, enabling composable, high-yield DeFi products through advanced financial engineering and custom payoff design.
+
+* [Torus](): Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
+
+* [Monoli Bridge](): Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
+
+* [Octa](): A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
+
+* [Bagel Wallet](): An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
+
+### Papers
 
 #### *Consensus*
+* [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, A novel consensus paradigm where deterministic DAG-based execution defines transaction order, and the consensus layer commits only to snapshot hashes, decoupling ordering from agreement.
+
+* [[_Issue] Consensus-Free Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-free transaction confirmation, enabled by BFT broadcast and explicit dependency models, optimizes latency and throughput.
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): Adopts DAG-based consensus for high-frequency environments; comparison with HotStuff.
+
 * [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): Early research on MonoBFT based on HotStuff series.
+
 * [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): Achieving 1-slot, 1-second finality.
 
 #### *Execution*
+* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
 
 * [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): Merging DAG concurrency with blockchain finality guarantees.
-* [\[Paper\] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh)
-* [\[Issue\] From RISC-V ELF to LBC](https://nicholas.feishu.cn/wiki/Bgr8wq3XdioEJwkLYgjcLDWNnVb): Building a compiler and VM runtime from RISC-V ELF to Loom Bytecode (LBC).
-* [\[Issue\] Loom Runtime Architecture](https://nicholas.feishu.cn/wiki/LdzZwdOGXiYWM3k1ZsMcTVJ4nAc): VM interpreter, memory model, and hostcall system.
+
+* [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink): This paper presents LoomVM, a secure and deterministic bytecode virtual machine designed for on-chain execution, translating RISC-V binaries into verifiable, gas-aware bytecode to enable high-performance, analyzable, and zk-friendly smart contract execution in the Monoli blockchain.
+
+* [[Agenda] Planning the Monoli Blockchain Smart Contract Language](https://nicholas.feishu.cn/wiki/AcMuwXbfZiBHaqkbox0comGnnZc?from=from_copylink): Define the requirements, architecture, and roadmap for Monoli’s Rust-based smart contract language and a VM supporting both Rust and Solidity smart contracts.
+
+* [[Issue] Abstract Execution in Blockchain: A Study on VM-Agnostic Architecture Design](https://nicholas.feishu.cn/wiki/O3ebwHIPJiH5DykdHSsccL6xn6d?from=from_copylink): A study on abstract execution architecture that hides blockchain complexity through a VM-agnostic, modular execution layer—enabling open, composable execution across diverse blockchain systems.
+
+* [[Issue] Shared Execution as a Public Good:  Scalable, Permissionless, and Shared Execution for Multi-VM Systems](https://nicholas.feishu.cn/wiki/HaBCwYiiGiodqrk0bWCcEENWn1g?from=from_copylink): An exploration of how Loom enables shared execution as a public good—supporting scalable, permissionless execution across heterogeneous VMs in an open execution network.
+
+* [\[Issue\] Multi-VM Equivalence and Intermediate Representation](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf): A comprehensive overview of Loom, Monoli’s unified execution environment, focusing on multi-VM equivalent execution and the role of an intermediate representation in enabling cross-VM compatibility.
+
 * [\[Issue\] Intra-chain Parallelism](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g): Native scaling through intra-chain parallelism.
-* [\[Issue\] Multi-VM Equivalence and Intermediate Representation](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf): Unified intermediate representation for equivalent multi-VM execution (e.g., rWASM).
+
+#### *DB, DA*
+* [[Issue] Designing a DAG-Compatible, Multi-VM Scalable Storage Layer for Monoli](): A design exploration of Monoli’s scalable, DAG-compatible storage layer to support multi-VM execution.
 
 #### *Architecture*
-
 * [Gazer](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Modular Rust SDK for building Monoli chains.
+
 * [\[Issue\] Rebuilding vs Refining](#): Comparing engineering-optimized vs innovation-driven architecture paths.
+
 * [\[Issue\] What's the Ideal Block Size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU) Finding the Optimal Block Size and Scalability Trade-offs in High-Performance Blockchains.
+
 * [\[Issue\] Native Accounts for On-Chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT) Account Model Designs in Representative Blockchains and Monoli's Design Exploration.
 
-#### *DEX*
+#### *DEX, DeFi*
 
 * [\[Issue\] DPS Benchmarking Methods](https://nicholas.feishu.cn/wiki/YRKUwMpigi2LYvkeV3xcv27Xnyd): Measuring throughput and latency using AMM-style benchmarks.
 * [\[Issue\] Controls Over Perpetual Contract Trading](https://nicholas.feishu.cn/wiki/C4GOwP5aEiX6BskixNHcx1sMn2b): Design of index price, mark price, and funding rate mechanisms.
 * [\[Issue\] Why Fully Transparent Trading Markets Are Beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg) Benefits and Merits of Transparent Trading Markets.
 * [\[Issue\] Feasibility of On-Chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd) Design and Implications of On-Chain Dark Pool Mechanisms.
 * [\[Paper\] Structured Finance of TradFi Inspires DeFi (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9): Applying structured finance instruments (MTP & MCD) in DeFi.
+
+* [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): A study of how asset tokenization and native yield logic power on-chain structured products, bridging DeFi innovation with traditional financial engineering.
+
+* [[Issue] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9?from=from_copylink): Exploring how structured finance principles from TradFi can inspire multi-layered derivative protocols in DeFi, enabling more sophisticated, composable financial products on Monoli.
+
+* [[Paper] Plaid: Optimizing Decentralized Central Limit Orderbooks: Incentive Mechanisms and Matching Engine Efficiency](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid provides a performant, low-latency on-chain CLOB protocol powered by Monoli's smart accounts and parallel execution, serving as a low-cost public good to enhance ecosystem liquidity and DeFi user experience.
 
 #### *OTHER*
 
