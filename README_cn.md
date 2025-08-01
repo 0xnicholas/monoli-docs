@@ -42,7 +42,7 @@ Monoli DEX提供以下四种交易方式：
 Website: https://monoli.xyz/
 
 ### L1
-- [Monoli L1 [draft v0.8.1]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+- [Monoli L1 [draft v0.8.3]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 - [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -59,15 +59,15 @@ Website: https://monoli.xyz/
 
 * [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
 
-* [Sunwell](): Sunwell是一个原生的Monoli协议，用于在链上构建结构化金融原语，通过金融工程和自定义设计实现可组合的高收益DeFi产品，为”链上华尔街“愿景提供基础。
+* Sunwell: Sunwell是一个原生的Monoli协议，用于在链上构建结构化金融原语，通过金融工程和自定义设计实现可组合的高收益DeFi产品，为”链上华尔街“愿景提供基础。
 
-* [Torus](): Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
+* Torus: Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
-* [Monoli Bridge](): Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
+* Monoli Bridge: Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
 
-* [Octa](): 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
+* Octa: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
 
-* [Bagel Wallet]():一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
+* Bagel Wallet: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
 
 ### Papers
 
@@ -75,7 +75,7 @@ Website: https://monoli.xyz/
 
 * [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, 弱共识理念提出，其中基于dag的确定性执行（TVA）定义了交易顺序，而共识层只提交快照哈希，从而将排序与共识解耦。
 
-* [[Issue] Consensus-Free Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过BFT广播和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
+* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过BFT广播和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): 采用DAG结构改进共识机制，并对比Hotstuff方案。
 

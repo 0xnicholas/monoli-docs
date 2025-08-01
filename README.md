@@ -51,7 +51,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### L1
 
-* [Monoli L1 \[draft v0.8.1\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+* [Monoli L1 \[draft v0.8.3\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 * [Monoli L1 \[draft v0.7.2\]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc)
 * [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 * [Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -68,22 +68,22 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid is Monoli’s native on-chain CLOB protocol that powers unified, high-efficiency liquidity for DeFi applications, offering precision trading and forming a share liquidity layer for Monoli’s on-chain financial ecosystem.
 
-* [Sunwell](): Sunwell is a native Monoli protocol for building structured finance primitives on-chain, enabling composable, high-yield DeFi products through advanced financial engineering and custom payoff design.
+* Sunwell: Sunwell is a native Monoli protocol for building structured finance primitives on-chain, enabling composable, high-yield DeFi products through advanced financial engineering and custom payoff design.
 
-* [Torus](): Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
+* Torus: Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
 
-* [Monoli Bridge](): Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
+* Monoli Bridge: Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
 
-* [Octa](): A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
+* Octa: A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
 
-* [Bagel Wallet](): An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
+* Bagel Wallet: An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
 
 ### Papers
 
 #### *Consensus*
 * [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, A novel consensus paradigm where deterministic DAG-based execution defines transaction order, and the consensus layer commits only to snapshot hashes, decoupling ordering from agreement.
 
-* [[Issue] Consensus-Free Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-free transaction confirmation, enabled by BFT broadcast and explicit dependency models, optimizes latency and throughput.
+* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-free transaction confirmation, enabled by BFT broadcast and explicit dependency models, optimizes latency and throughput.
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): Adopts DAG-based consensus for high-frequency environments; comparison with HotStuff.
 
