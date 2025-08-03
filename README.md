@@ -12,14 +12,14 @@ Monoli is designed to push the performance limits of Layer 1 blockchains by deco
 
 With a target throughput of **120,000 TPS**, Monoli aims to deliver a Web2-grade user experience for DeFi, high-frequency trading (HFT), and on-chain applications. Key innovations and enhancements include:
 
-* **[MonoBFT]()**, A high-frequency finality BFT protocol built on DAG structures (earlier based on a HotStuff derivative).
-* **[TVA]()**, A time-verifiable asynchronous execution model that deterministically pre-orders transactions while enabling asynchronous execution.
-* **[ForceSync]()**, Monoli’s proprietary state and block synchronization system that ensures robust node consistency.
-* **[Execution Framework]()**, A VM-agnostic execution environment supporting diverse smart contract runtimes.
-* **[Loom]()**, A hybrid VM execution network, centered around **LoomVM**, a secure and deterministic bytecode virtual machine compiled from RISC-V (replacing rWASM). It supports multi-VM equivalent execution environments.
-* **[MonoDB]()**, A multi-tiered database built on top of RocksDB, optimized for performance and scalability.
-* **[TurboCast]()**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
-* **[LiquiBoost]()**, A native on-chain incentive protocol designed to reward both validators and developers.
+* **MonoBFT**, A high-frequency finality BFT protocol built on DAG structures (earlier based on a HotStuff derivative).
+* **TVA**, A time-verifiable asynchronous execution model that deterministically pre-orders transactions while enabling asynchronous execution.
+* **ForceSync**, Monoli’s proprietary state and block synchronization system that ensures robust node consistency.
+* **Execution Framework**, A VM-agnostic execution environment supporting diverse smart contract runtimes.
+* **Loom**, A hybrid VM execution network, centered around **LoomVM**, a secure and deterministic bytecode virtual machine compiled from RISC-V (replacing rWASM). It supports multi-VM equivalent execution environments.
+* **MonoDB**, A multi-tiered database built on top of RocksDB, optimized for performance and scalability.
+* **TurboCast**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
+* **LiquiBoost**, A native on-chain incentive protocol designed to reward both validators and developers.
 
 In addition, Monoli provides a modular Rust SDK and framework named **[Gazer](https://github.com/0xnicholas/gazer)** for building custom blockchain systems.
 
@@ -39,7 +39,7 @@ The exchange supports four primary order types:
 Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * **Index Perps** – Trade ecosystem indices like NFT floor price composites (e.g., *NFTI-USD*).
-* **[Vaults]()**:
+* **Vaults**:
 
   * Market-making vaults (user-customized and platform-driven via **MLP**, Monoli Liquidity Provider).
   * Structured derivative vaults (**MTP**, Monoli Tranche Perp Vault).
@@ -68,7 +68,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid is Monoli’s native on-chain CLOB protocol that powers unified, high-efficiency liquidity for DeFi applications, offering precision trading and forming a share liquidity layer for Monoli’s on-chain financial ecosystem.
 
-* Sunwell: Sunwell is a native Monoli protocol for building structured finance primitives on-chain, enabling composable, high-yield DeFi products through advanced financial engineering and custom payoff design.
+* Sunwell: Sunwell represents a critical step in transforming structured financial products into on-chain financial primitives, enabling asset tokenization, native yield generation, and structured wrapping for advanced DeFi applications in capital formation, risk pricing, and yield engineering.
 
 * Torus: Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
 

@@ -9,14 +9,14 @@ Monoli的主要是解耦并独立升级各L1组件（比如解耦共识和执行
 
 Monoli 在多个主要领域进行优化，从而实现了自身卓越的性能和全链执行的提升，并大大提高了去中心化/可扩展性的权衡。这些主要的改进领域如：
 
-- [MonoBFT]()，一种基于dag结构的高频最终性的BFT协议，旧版本为Hotstuff衍生。
-- [TVA]()， 交易顺序预先确定并可验证，同时异步执行。
-- [ForceSync]，Monoli专有同步系统，用来确保所有节点一致。
-- [Execution Framework]()，一种VM无关（VM-Agnostic）的执行框架。
-- [Loom]()，一种VMs混合执行网络，主要包括LoomVM，一个由RISC-V编译支持的安全且确定的字节码虚拟机（旧版为rWASM VM）。和VMs等效执行环境。
-- [MonoDB]()，由RocksDB改进而来的分层存储数据库。
-- [TurboCast]()，可靠的高效网络传播机制，采用了动态广播树。
-- [LiquiBoost]()，Monoli原生合约，用于节点激励和开发者激励。
+- **MonoBFT**，一种基于dag结构的高频最终性的BFT协议，旧版本为Hotstuff衍生。
+- **TVA**， 交易顺序预先确定并可验证，同时异步执行。
+- **ForceSync**，Monoli专有同步系统，用来确保所有节点一致。
+- **Execution Framework**，一种VM无关（VM-Agnostic）的执行框架。
+- **Loom**，一种VMs混合执行网络，主要包括LoomVM，一个由RISC-V编译支持的安全且确定的字节码虚拟机（旧版为rWASM VM）。和VMs等效执行环境。
+- **MonoDB**，由RocksDB改进而来的分层存储数据库。
+- **TurboCast**，可靠的高效网络传播机制，采用了动态广播树。
+- **LiquiBoost**，Monoli原生合约，用于节点激励和开发者激励。
 
 以及 [Gazer]( https://github.com/0xnicholas/gazer) (Monoli L1 Framework & SDK)
 
@@ -34,7 +34,7 @@ Monoli DEX提供以下四种交易方式：
 
 除了特定代币的永续合约，Monoli DEX 还提供以下类型的交易工具：
 - 指数永续合约：提供各种区块链生态系统指数的永续期货交易，例如追踪特定蓝筹 NFT 集合平均底价的指数 (NFTI-USD)。
-- [Vaults]()：包括做市策略Vault（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；结构化Vault（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
+- **Vaults**：包括做市策略Vault（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；结构化Vault（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
 
 ## Resources
@@ -59,7 +59,7 @@ Website: https://monoli.xyz/
 
 * [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
 
-* Sunwell: Sunwell是一个原生的Monoli协议，用于在链上构建结构化金融原语，通过金融工程和自定义设计实现可组合的高收益DeFi产品，为”链上华尔街“愿景提供基础。
+* Sunwell: Sunwell协议是将结构性金融商品变为链上金融原语的关键一步，旨在建立一套支持资产代币化、原生收益产生与结构化包装的链上协议，面向高效链上融资、风险定价与收益工程的 DeFi 应用。
 
 * Torus: Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
