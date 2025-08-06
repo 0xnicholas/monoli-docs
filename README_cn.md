@@ -55,19 +55,19 @@ Website: https://monoli.xyz/
 - [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
 ### Ecosystem
-* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。
+* [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。
 
-* [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
+* [**Plaid**](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
 
-* Sunwell: Sunwell协议是将结构性金融商品变为链上金融原语的关键一步，旨在建立一套支持资产代币化、原生收益产生与结构化包装的链上协议，面向高效链上融资、风险定价与收益工程的 DeFi 应用。
+* [**Sunwell**](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): Sunwell协议是将结构性金融商品变为链上金融原语的关键一步，旨在建立一套支持资产代币化、原生收益产生与结构化包装的链上协议，面向高效链上融资、风险定价与收益工程的 DeFi 应用。
 
-* Torus: Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
+* **Torus**: Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
-* Monoli Bridge: Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
+* Monoli **Bridge**: Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
 
-* Octa: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
+* **Octa**: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
 
-* Bagel Wallet: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
+* **Bagel** Wallet: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
 
 ### Papers
 

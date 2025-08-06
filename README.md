@@ -64,19 +64,19 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [DEX Technical Documentation](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
 ### Ecosystem
-* [Monogram](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic dollar protocol on Monoli, providing a crypto-native stablecoin backed by delta-neutral derivative strategies. $M combines peg stability with intrinsic yield, making it a robust foundation for on-chain financial applications.
+* [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic dollar protocol on Monoli, providing a crypto-native stablecoin backed by delta-neutral derivative strategies. $M combines peg stability with intrinsic yield, making it a robust foundation for on-chain financial applications.
 
-* [Plaid](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid is Monoli’s native on-chain CLOB protocol that powers unified, high-efficiency liquidity for DeFi applications, offering precision trading and forming a share liquidity layer for Monoli’s on-chain financial ecosystem.
+* [**Plaid**](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid is Monoli’s native on-chain CLOB protocol that powers unified, high-efficiency liquidity for DeFi applications, offering precision trading and forming a share liquidity layer for Monoli’s on-chain financial ecosystem.
 
-* Sunwell: Sunwell represents a critical step in transforming structured financial products into on-chain financial primitives, enabling asset tokenization, native yield generation, and structured wrapping for advanced DeFi applications in capital formation, risk pricing, and yield engineering.
+* [**Sunwell**](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): Sunwell represents a critical step in transforming structured financial products into on-chain financial primitives, enabling asset tokenization, native yield generation, and structured wrapping for advanced DeFi applications in capital formation, risk pricing, and yield engineering.
 
-* Torus: Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
+* **Torus**: Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
 
-* Monoli Bridge: Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
+* Monoli **Bridge**: Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
 
-* Octa: A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
+* **Octa**: A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
 
-* Bagel Wallet: An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
+* **Bagel** Wallet: An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
 
 ### Papers
 
