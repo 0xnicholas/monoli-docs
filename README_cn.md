@@ -27,13 +27,13 @@ Monoli DEX 提供了一个强大的交易平台，适合高频交易者、专业
 DEX的技术基础皆得益于Monoli L1的高效特性，大幅提升了交易效率，能够使得交易者进行自动化策略和高频交易。
 
 Monoli DEX提供以下四种交易方式：
-1. Market order：以当前市场价格立即执行交易。
-2. Limit order：以指定的期望价格执行交易。
-3. Scale order：在设定的价格范围内建立并执行多个限价订单。
-4. TWAP：在固定的时间间隔内将一个订单分成多个订单执行交易。
+1. **Market Order**：以当前市场价格立即执行交易。
+2. **Limit Order**：以指定的期望价格执行交易。
+3. **Scale Order**：在设定的价格范围内建立并执行多个限价订单。
+4. **TWAP**：在固定的时间间隔内将一个订单分成多个订单执行交易。
 
 除了特定代币的永续合约，Monoli DEX 还提供以下类型的交易工具：
-- 指数永续合约：提供各种区块链生态系统指数的永续期货交易，例如追踪特定蓝筹 NFT 集合平均底价的指数 (NFTI-USD)。
+- **指数永续合约**：提供各种区块链生态系统指数的永续期货交易，例如追踪特定蓝筹 NFT 集合平均底价的指数 (NFTI-USD)。
 - **Vaults**：包括做市策略Vault（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；结构化Vault（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
 
@@ -61,13 +61,13 @@ Website: https://monoli.xyz/
 
 * [**Sunwell**](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): Sunwell协议是将结构性金融商品变为链上金融原语的关键一步，旨在建立一套支持资产代币化、原生收益产生与结构化包装的链上协议，面向高效链上融资、风险定价与收益工程的 DeFi 应用。
 
-* **Torus**: Monoli的智能账户利用了以意图为中心的Torus协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
+* **Dakai**: 以意图为中心的协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
 * Monoli **Bridge**: Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
 
 * **Octa**: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
 
-* **Bagel** Wallet: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
+* **Bagel Wallet**: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
 
 ### Papers
 

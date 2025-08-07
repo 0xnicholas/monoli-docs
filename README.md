@@ -21,7 +21,7 @@ With a target throughput of **120,000 TPS**, Monoli aims to deliver a Web2-grade
 * **TurboCast**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
 * **LiquiBoost**, A native on-chain incentive protocol designed to reward both validators and developers.
 
-In addition, Monoli provides a modular Rust SDK and framework named **[Gazer](https://github.com/0xnicholas/gazer)** for building custom blockchain systems.
+In addition, Monoli provides a modular Rust SDK and framework named [**Gazer**](https://github.com/0xnicholas/gazer) for building custom blockchain systems.
 
 ## Monoli DEX
 
@@ -31,9 +31,9 @@ Designed for power users—quantitative traders, professionals, and leverage spe
 
 The exchange supports four primary order types:
 
-1. **Market Orders** – Execute immediately at the best available price.
-2. **Limit Orders** – Execute at a user-specified price.
-3. **Scale Orders** – Place multiple limit orders across a price range.
+1. **Market Order** – Execute immediately at the best available price.
+2. **Limit Order** – Execute at a user-specified price.
+3. **Scale Order** – Place multiple limit orders across a price range.
 4. **TWAP** – Time-weighted average price execution over intervals.
 
 Beyond standard perps, Monoli DEX also offers structured perpetual products:
@@ -70,13 +70,13 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [**Sunwell**](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): Sunwell represents a critical step in transforming structured financial products into on-chain financial primitives, enabling asset tokenization, native yield generation, and structured wrapping for advanced DeFi applications in capital formation, risk pricing, and yield engineering.
 
-* **Torus**: Monoli’s smart accounts leverage the intent-centric Torus protocol, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
+* **Dakai**: The intent-centric protocols, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
 
 * Monoli **Bridge**: Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
 
 * **Octa**: A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
 
-* **Bagel** Wallet: An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
+* **Bagel Wallet**: An intent-enabled programmable wallet that allows users to express desired outcomes while abstracting away transaction complexity.
 
 ### Papers
 
