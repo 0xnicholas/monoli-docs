@@ -37,7 +37,6 @@ Monoli DEX提供以下四种交易方式：
 - **Funding Rate收益交易**：资金费率收益交易使交易者能够表达其对资金利率的看法。看涨资金利率的交易者可以开立多头头寸，而看跌的交易者可以开立空头头寸。同时还使具有浮动Funding rate敞口的交易者能够对冲其Funding rate payment/receivables。
 - **Vaults**：包括做市策略Vaults（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；Funding Rate收益交易Vaults；结构化Vaults（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
-
 ## Resources
 
 Website: https://monoli.xyz/
@@ -47,7 +46,6 @@ Website: https://monoli.xyz/
 - [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
-
 
 ### DEX
 - [Monoli Perp DEX [v1.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
