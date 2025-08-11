@@ -34,7 +34,8 @@ Monoli DEX提供以下四种交易方式：
 
 除了特定代币的永续合约，Monoli DEX 还提供以下类型的交易工具：
 - **指数永续合约**：提供各种区块链生态系统指数的永续期货交易，例如追踪特定蓝筹 NFT 集合平均底价的指数 (NFTI-USD)。
-- **Vaults**：包括做市策略Vault（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；结构化Vault（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
+- **Funding Rate收益交易**：资金费率收益交易使交易者能够表达其对资金利率的看法。看涨资金利率的交易者可以开立多头头寸，而看跌的交易者可以开立空头头寸。同时还使具有浮动Funding rate敞口的交易者能够对冲其Funding rate payment/receivables。
+- **Vaults**：包括做市策略Vaults（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；Funding Rate收益交易Vaults；结构化Vaults（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
 
 ## Resources

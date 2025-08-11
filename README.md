@@ -39,11 +39,18 @@ The exchange supports four primary order types:
 Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * **Index Perps** – Trade ecosystem indices like NFT floor price composites (e.g., *NFTI-USD*).
+- **FundingRate Future**：FF enables traders to express their view on funding rates. Those bullish on funding rates can open a long position whereas bears can open a short position. FF also enables those with a floating funding rate exposure to hedge their funding rates payment / receivables.
 * **Vaults**:
 
   * Market-making vaults (user-customized and platform-driven via **MLP**, Monoli Liquidity Provider).
+  * FF Vaults (Funding Future Vault).
   * Structured derivative vaults (**MTP**, Monoli Tranche Perp Vault).
   * Credit risk protection vaults (**MCD**, Monoli Credit Default Vault).
+
+
+- **Funding Rate收益交易**：资金费率收益交易使交易者能够表达其对资金利率的看法。看涨资金利率的交易者可以开立多头头寸，而看跌的交易者可以开立空头头寸。同时还使具有浮动Funding rate敞口的交易者能够对冲其Funding rate payment/receivables。
+- **Vaults**：包括做市策略Vaults（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；Funding Rate收益交易Vaults；结构化Vaults（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
+
 
 ## Resources
 
