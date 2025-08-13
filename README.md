@@ -21,7 +21,7 @@ With a target throughput of **120,000 TPS**, Monoli aims to deliver a Web2-grade
 * **TurboCast**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
 * **LiquiBoost**, A native on-chain incentive protocol designed to reward both validators and developers.
 
-In addition, Monoli provides a modular Rust SDK and framework named [**Gazer**](https://github.com/0xnicholas/gazer) for building custom blockchain systems.
+In addition, Monoli provides a modular Rust SDK and framework named **Gizmo** for building custom blockchain systems.
 
 ## Monoli DEX
 
@@ -114,7 +114,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [[Issue] Designing a DAG-Compatible, Multi-VM Scalable Storage Layer for Monoli](): A design exploration of Monoli’s scalable, DAG-compatible storage layer to support multi-VM execution.
 
 #### *Architecture*
-* [Gazer](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Modular Rust SDK for building Monoli chains.
+* [Gizmo](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Modular Rust SDK for building Monoli chains.
 
 * [\[Issue\] Rebuilding vs Refining](#): Comparing engineering-optimized vs innovation-driven architecture paths.
 

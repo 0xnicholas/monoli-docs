@@ -18,7 +18,7 @@ Monoli 在多个主要领域进行优化，从而实现了自身卓越的性能�
 - **TurboCast**，可靠的高效网络传播机制，采用了动态广播树。
 - **LiquiBoost**，Monoli原生合约，用于节点激励和开发者激励。
 
-以及 [Gazer]( https://github.com/0xnicholas/gazer) (Monoli L1 Framework & SDK)
+以及 **Gizmo** (Monoli L1 Framework & SDK)
 
 
 ## Monoli DEX
@@ -103,7 +103,7 @@ Website: https://monoli.xyz/
 * [[Issue] Designing a DAG-Compatible, Multi-VM Scalable Storage Layer for Monoli](https://nicholas.feishu.cn/wiki/AjMAwGpTaim0NjkHbTJctRcznmk?from=from_copylink): Monoli可扩展的、兼容dag的存储层的设计探索，以支持多虚拟机执行。
 
 #### *Architecture*
-- [Gazer: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g?from=from_copylink) Gazer是一个Rust框架，用于以模块化和可扩展的方式构建区块链。它是一组用于构建Monoli链的库和原语
+- [Gizmo: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g?from=from_copylink) Gizmo是一个Rust框架，用于以模块化和可扩展的方式构建区块链。它是一组用于构建Monoli链的库和原语
 
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
 
