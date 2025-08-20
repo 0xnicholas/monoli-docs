@@ -60,7 +60,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### DEX
 
-* [Monoli Perp DEX \[v1.2\]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
+* [Monoli Perp DEX \[v1.2.2\]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 * [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
 * [DEX Risk Management and Case Studies](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
 * [DEX Technical Documentation](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
@@ -74,7 +74,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * **Dakai**: The intent-centric protocols, introducing a declarative transaction model that shifts execution complexity away from users to solver networks.
 
-* Monoli **Bridge**: Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
+* [Monoli **Bridge**](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli Bridge is a native cross-chain gateway that enables fast, low-cost, and secure asset transfers between Monoli and Ethereum(and more), supporting seamless interoperability through a decentralized architecture.
 
 * **Octa**: A decentralized MPC signer network designed to solve blockchain interoperability challenges through a Zero Trust cryptographic model and a high-performance, decentralized architecture.
 
@@ -118,6 +118,10 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [\[Issue\] Rebuilding vs Refining](#): Comparing engineering-optimized vs innovation-driven architecture paths.
 
+* [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases.
+
+* [[Issue] Monoli Native Bridge: Seamless Interoperability for Realm Chains and Ethereum](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli native bridging solution, which enables users to securely and efficiently transfer messages and assets between Monoli realm chain and other major public chains.
+
 * [\[Issue\] What's the Ideal Block Size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU) Finding the Optimal Block Size and Scalability Trade-offs in High-Performance Blockchains.
 
 * [\[Issue\] Native Accounts for On-Chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT) Account Model Designs in Representative Blockchains and Monoli's Design Exploration.
@@ -133,6 +137,8 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): A study of how asset tokenization and native yield logic power on-chain structured products, bridging DeFi innovation with traditional financial engineering.
 
 * [[Issue] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9?from=from_copylink): Exploring how structured finance principles from TradFi can inspire multi-layered derivative protocols in DeFi, enabling more sophisticated, composable financial products on Monoli.
+
+* [[Issue] Advancing Global Payments: Designing a Stablecoin-Optimized Layer 1 Blockchain for Seamless TradFi-DeFi Integration](https://nicholas.feishu.cn/wiki/GAw6wbgCSi4sElkdETMcZDrdnjc?from=from_copylink): Exploring a “high-performance, payment-focused blockchain” that utilizes the Monoli Realm Chain architecture. Positioned as a high-performance, stablecoin-payment-oriented L1 public chain. Capable of bridging the TradFi and crypto worlds, emphasizing privacy and compliance. The economic model avoids traditional token economics, with fees paid in stablecoins.
 
 * [[Paper] Plaid: Optimizing Decentralized Central Limit Orderbooks: Incentive Mechanisms and Matching Engine Efficiency](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid provides a performant, low-latency on-chain CLOB protocol powered by Monoli's smart accounts and parallel execution, serving as a low-cost public good to enhance ecosystem liquidity and DeFi user experience.
 

@@ -48,7 +48,7 @@ Website: https://monoli.xyz/
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
 
 ### DEX
-- [Monoli Perp DEX [v1.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
+- [Monoli Perp DEX [v1.2.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 - [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
 - [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
 - [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
@@ -62,7 +62,7 @@ Website: https://monoli.xyz/
 
 * **Dakai**: 以意图为中心的协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
-* Monoli **Bridge**: Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
+* [Monoli **Bridge**](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
 
 * **Octa**: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
 
@@ -107,6 +107,10 @@ Website: https://monoli.xyz/
 
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
 
+- [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Realm Chain 是一种模块化 L1 区块链架构，旨在支持领域专用链（Domain-Specific Chains）的快速构建与优化。通过重用 Monoli L1 的核心模块与工具，Realm Chain 在保障去中心化与安全性的同时，为特定用例（如稳定币支付）提供高性能、可扩展与合规友好的基础设施。
+
+- [[Issue] Monoli Native Bridge: Seamless Interoperability for Realm Chains and Ethereum](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli原生桥接解决方案，它使用户能够安全高效的在Monoli领域链和其他主要公链之间传递消息转移资产。
+
 - [[Issue] What's the ideal block size](https://nicholas.feishu.cn/wiki/FEnIwzQyviOls1k8pngc5W2EnAU?from=from_copylink) 寻找高性能链中最佳区块大小与可扩展性
 
 - [[Issue] Native Accounts for On-chain Finance](https://nicholas.feishu.cn/wiki/Mlj6wfTEviPKcckdktVcP62cnhT?from=from_copylink) 讨论不同代表性区块链的账户模型设计，Monoli Accounts设计探索
@@ -118,10 +122,11 @@ Website: https://monoli.xyz/
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)  链上暗池讨论
 - [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9)  从TradFi中借鉴结构化金融产品用于DeFi，以及Monoli结构化Vaults MTP和MCD的设计
 
-
 * [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): 资产代币化和原生收益率逻辑如何影响链上结构性产品，将DeFi创新与传统金融工程结合起来的研究。
 
 * [[Issue] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9?from=from_copylink): 探索来自TradFi的结构化金融原语如何启发DeFi中的多层衍生协议，使Monoli上的更复杂、可组合的金融产品成为可能。
+
+* [[Issue] Advancing Global Payments: Designing a Stablecoin-Optimized Layer 1 Blockchain for Seamless TradFi-DeFi Integration](https://nicholas.feishu.cn/wiki/GAw6wbgCSi4sElkdETMcZDrdnjc?from=from_copylink): 探索一种“高性能、专注于支付的区块链”，它使用了Monoli Realm Chain架构. 定位为高性能、稳定币支付导向的L1公链. 能够桥接TradFi和加密世界，强调隐私、开放性和合规。经济模型避免传统代币经济，费用用稳定币支付。
 
 * [[Paper] Plaid: Optimizing Decentralized Central Limit Orderbooks: Incentive Mechanisms and Matching Engine Efficiency](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid提供了一个高性能，低延迟的链上CLOB协议，由Monoli提供支持，作为一个低成本的公共产品，以增强生态系统的流动性和DeFi用户体验。
 
@@ -131,3 +136,4 @@ Website: https://monoli.xyz/
 - [MEPs](https://nicholas.feishu.cn/wiki/V87Zwm8EWiWPSXkA7lHcaOQengf?from=from_copylink) Monoli改进提案记录
 - [[Paper] From Multi-chain Integration to Unified Operations: The Omnichain Operationally Harmonized Infrastructure [draft]](https://nicholas.feishu.cn/wiki/ZWr0wJwxuib9r6kXGjEcDZTuncc?from=from_copylink) 链抽象和全链互操作性的早期思考
 - [[Paper] The MA End Game - Massive Adoption Capability Solutions](https://nicholas.feishu.cn/wiki/M9Cuw8PWVin7lhkx2MZcLkk4nAg?from=from_copylink) 实现web3大规模采用需要解决的问题，早期指引了Monoli的愿景
+- [[Issue] Adapting Monoli L1 into LicoChain: A Compliance-Oriented, Token-Free Open Consortium Blockchain for the Chinese Market](https://nicholas.feishu.cn/wiki/DNC1wQ2NQiXpjdk0peUcthz9nnh?from=from_copylink): 一种在中国运营的开放联盟链（fork monoli），剥离原生代币经济，采用开放联盟治理，并集成合规特性：面向商业提供企业应用和解决方案，包括数字资产上链，可信存证，产业及供应链金融等。
