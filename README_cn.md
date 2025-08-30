@@ -72,7 +72,9 @@ Website: https://monoli.xyz/
 
 #### *Consensus*
 
-* [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, 弱共识理念提出，其中基于dag的确定性执行（TVA）定义了交易顺序，而共识层只提交快照哈希，从而将排序与共识解耦。
+* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): 更好的Mempool（可靠地分发交易）是高性能账本的关键。它应该完全从共识协议中分离出来，让共识协议只负责排序固定大小的小引用。这使得系统总体吞吐量在很大程度上不受共识吞吐量的影响。
+
+* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): 探索将TVA集成到基于dag的区块链中，在不完全依赖共识层排序的情况下实现确定性、可验证的交易排序，实现高通量的并行执行。
 
 * [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过BFT广播和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
 
@@ -83,7 +85,6 @@ Website: https://monoli.xyz/
 * [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): 1slot/1s实现最终性的方案
 
 #### *Execution*
-* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): 探索将TVA集成到基于dag的区块链中，在不依赖共识层排序的情况下实现确定性、可验证的交易排序，实现高通量的并行执行。
 
 * [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink): 提出一种面向链上执行的安全确定性字节码虚拟机LoomVM，将RISC-V二进制文件转换为可验证、gas感知的字节码，以实现在Monoli区块链中高效、可分析、zk友好的智能合约执行。
 

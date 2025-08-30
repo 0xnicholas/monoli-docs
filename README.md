@@ -83,7 +83,9 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 ### Papers
 
 #### *Consensus*
-* [[Issue] Rethinking Consensus for Ordering-First Blockchains: Commit-Only Snapshots from Deterministic DAG ](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): ”Ordering-First“, A novel consensus paradigm where deterministic DAG-based execution defines transaction order, and the consensus layer commits only to snapshot hashes, decoupling ordering from agreement.
+* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): A better Mempool, that reliably distributes transactions, is the key enabler of a high-performance ledger. It should be separated from the consensus protocol altogether, leaving consensus only the job of ordering small fixed-size references. This leads to an overall system throughput being largely unaffected by consensus throughput.
+
+* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
 
 * [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-free transaction confirmation, enabled by BFT broadcast and explicit dependency models, optimizes latency and throughput.
 
@@ -94,7 +96,6 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): Achieving 1-slot, 1-second finality.
 
 #### *Execution*
-* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
 
 * [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): Merging DAG concurrency with blockchain finality guarantees.
 
