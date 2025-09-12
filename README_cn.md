@@ -4,7 +4,7 @@
 Monoli代表了[Lico labs]()研究的一个高性能区块链L1和其主要DeFi生态项目，目前处于产研深入探索阶段。Monoli旨在创建一个超高效区块链基础设施和结构化金融生态系统。它包括三个主要项目： [Monoli L1]()，[Monoli Perp DEX]()及[Monoli Vaults]()。
 
 ## Monoli L1
-Monoli旨在通过全方面加强或重构区块链Layer 1的各个部分来提升区块链性能，目标为120,000TPS，为DeFi、高频交易和dApp提供web2级别的链上体验。
+Monoli旨在通过全方面加强或重构区块链Layer 1的各个部分来提升区块链性能，目标为240,000TPS，为DeFi、高频交易和dApp提供web2级别的链上体验。
 Monoli的主要是解耦并独立升级各L1组件（比如解耦共识和执行、执行和传播等），同时保持不同层的变速协同，这种架构能够适应区块链技术的长周期演进需求，同时在每个阶段都能进行最佳实践，在当下获得最优基础设施。
 
 Monoli 在多个主要领域进行优化，从而实现了自身卓越的性能和全链执行的提升，并大大提高了去中心化/可扩展性的权衡。这些主要的改进领域如：
@@ -14,6 +14,7 @@ Monoli 在多个主要领域进行优化，从而实现了自身卓越的性能�
 - **ForceSync**，Monoli专有同步系统，用来确保所有节点一致。
 - **Execution Framework**，一种VM无关（VM-Agnostic）的执行框架。
 - **Loom**，一种VMs混合执行网络，主要包括LoomVM，一个由RISC-V编译支持的安全且确定的字节码虚拟机（旧版为rWASM VM）。和VMs等效执行环境。
+* **MonoEVM**, EVM兼容
 - **MonoDB**，由RocksDB改进而来的分层存储数据库。
 - **TurboCast**，可靠的高效网络传播机制，采用了动态广播树。
 - **LiquiBoost**，Monoli原生合约，用于节点激励和开发者激励。
@@ -42,7 +43,7 @@ Monoli DEX提供以下四种交易方式：
 Website: https://monoli.xyz/
 
 ### L1
-- [Monoli L1 [draft v0.8.3]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+- [Monoli L1 [draft v0.8.4]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 - [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 - [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -71,22 +72,25 @@ Website: https://monoli.xyz/
 ### Papers
 
 #### *Consensus*
+* [[Issue] Uncertified DAGs for Scalable BFT Consensus: Optimizing Latency and Throughput in Next-Generation Blockchain Architectures](https://nicholas.feishu.cn/wiki/Xx7gwdJ7SiH03XktyJucrkmrnyS?from=from_copylink) MonoBFT V0.9，异步网络共识，无证书设计
 
-* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): 更好的Mempool（可靠地分发交易）是高性能账本的关键。它应该完全从共识协议中分离出来，让共识协议只负责排序固定大小的小引用。这使得系统总体吞吐量在很大程度上不受共识吞吐量的影响。
+* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): (MonoGraph) 更好的Mempool（可靠地分发交易）是高性能账本的关键。它应该完全从共识协议中分离出来，让共识协议只负责排序固定大小的引用。这使得系统总体吞吐量在很大程度上不受共识吞吐量的影响。
 
 * [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): 探索将TVA集成到基于dag的区块链中，在不完全依赖共识层排序的情况下实现确定性、可验证的交易排序，实现高通量的并行执行。
 
-* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过BFT广播和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
+* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): 探索了如何通过可靠性广播(TurboCast)和显式依赖模型来实现无共识的交易确认，以大幅优化延迟和吞吐量。
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): 采用DAG结构改进共识机制，并对比Hotstuff方案。
 
 * [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): 较早版本对MonoBFT的研究，基于HotStuff系列。
 
-* [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): 1slot/1s实现最终性的方案
+* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
 
 #### *Execution*
 
 * [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink): 提出一种面向链上执行的安全确定性字节码虚拟机LoomVM，将RISC-V二进制文件转换为可验证、gas感知的字节码，以实现在Monoli区块链中高效、可分析、zk友好的智能合约执行。
+
+* [[Paper] MonoEVM+ : Optimizing the EVM through Consensus and Client Innovation (reth)](https://nicholas.feishu.cn/wiki/UZkmwTCQEiraRkkzHmjcarpdnwf?from=from_copylink): Monoli L1支持EVM，MonoEVM采用reth/revm作为执行引擎基础。
 
 * [[Issue] Abstract Execution in Blockchain: A Study on VM-Agnostic Architecture Design](https://nicholas.feishu.cn/wiki/O3ebwHIPJiH5DykdHSsccL6xn6d?from=from_copylink): 研究抽象执行体系结构，通过与虚拟机无关的、模块化的、开放的、可组合的、跨不同区块链系统的执行来隐藏区块链复杂性。
 
@@ -108,7 +112,7 @@ Website: https://monoli.xyz/
 
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
 
-- [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Realm Chain 是一种模块化 L1 区块链架构，旨在支持领域专用链（Domain-Specific Chains）的快速构建与优化。通过重用 Monoli L1 的核心模块与工具，Realm Chain 在保障去中心化与安全性的同时，为特定用例（如稳定币支付）提供高性能、可扩展与合规友好的基础设施。
+- [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Monoli Realm Chain 是一种模块化 L1 区块链架构，旨在支持领域专用链（Domain-Specific Chains）的快速构建与优化。通过重用 Monoli L1 的核心模块与工具，Realm Chain 在保障去中心化与安全性的同时，为特定用例（如稳定币支付）提供高性能、可扩展与合规友好的基础设施。
 
 - [[Issue] Monoli Native Bridge: Seamless Interoperability for Realm Chains and Ethereum](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli原生桥接解决方案，它使用户能够安全高效的在Monoli领域链和其他主要公链之间传递消息转移资产。
 
@@ -122,6 +126,8 @@ Website: https://monoli.xyz/
 - [[Issue] Why fully transparent trading markets are beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg?from=from_copylink) 对透明交易市场的正面分析
 - [[Issue]Feasibility of On-chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd?from=from_copylink)  链上暗池讨论
 - [[Paper] Structured Finance of TradFi Inspires DeFi Protocol (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9)  从TradFi中借鉴结构化金融产品用于DeFi，以及Monoli结构化Vaults MTP和MCD的设计
+
+* [[Paper] $M Stablecoin, a synthetic dollar based crypto-native solution for money](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink): 收益型稳定币($M)协议Monogram, 以高流动性加密资产进行抵押，根据抵押率（通常不超过100%）铸造等值的$M。Delta-Neutral Hedging，在衍生品市场开设等值对冲头寸，平衡价格波动，并实时动态调整。同时实现了Funding rates 套利和质押收益。
 
 * [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): 资产代币化和原生收益率逻辑如何影响链上结构性产品，将DeFi创新与传统金融工程结合起来的研究。
 

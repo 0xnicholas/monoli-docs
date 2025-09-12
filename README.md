@@ -10,13 +10,14 @@
 
 Monoli is designed to push the performance limits of Layer 1 blockchains by decoupling and independently optimizing core components—such as consensus, execution, and networking—while maintaining *variable-speed coordination* between layers. This architectural approach enables Monoli to align with the long-term evolutionary trajectory of blockchain technology while achieving best-in-class infrastructure in every stage.
 
-With a target throughput of **120,000 TPS**, Monoli aims to deliver a Web2-grade user experience for DeFi, high-frequency trading (HFT), and on-chain applications. Key innovations and enhancements include:
+With a target throughput of **240,000 TPS**, Monoli aims to deliver a Web2-grade user experience for DeFi, high-frequency trading (HFT), and on-chain applications. Key innovations and enhancements include:
 
 * **MonoBFT**, A high-frequency finality BFT protocol built on DAG structures (earlier based on a HotStuff derivative).
 * **TVA**, A time-verifiable asynchronous execution model that deterministically pre-orders transactions while enabling asynchronous execution.
 * **ForceSync**, Monoli’s proprietary state and block synchronization system that ensures robust node consistency.
 * **Execution Framework**, A VM-agnostic execution environment supporting diverse smart contract runtimes.
 * **Loom**, A hybrid VM execution network, centered around **LoomVM**, a secure and deterministic bytecode virtual machine compiled from RISC-V (replacing rWASM). It supports multi-VM equivalent execution environments.
+* **MonoEVM**,
 * **MonoDB**, A multi-tiered database built on top of RocksDB, optimized for performance and scalability.
 * **TurboCast**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
 * **LiquiBoost**, A native on-chain incentive protocol designed to reward both validators and developers.
@@ -53,7 +54,7 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### L1
 
-* [Monoli L1 \[draft v0.8.3\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+* [Monoli L1 \[draft v0.8.4\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
 * [Monoli L1 \[draft v0.7.2\]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc)
 * [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
 * [Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
@@ -83,23 +84,25 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 ### Papers
 
 #### *Consensus*
-* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): A better Mempool, that reliably distributes transactions, is the key enabler of a high-performance ledger. It should be separated from the consensus protocol altogether, leaving consensus only the job of ordering small fixed-size references. This leads to an overall system throughput being largely unaffected by consensus throughput.
+* [[Issue] Uncertified DAGs for Scalable BFT Consensus: Optimizing Latency and Throughput in Next-Generation Blockchain Architectures](https://nicholas.feishu.cn/wiki/Xx7gwdJ7SiH03XktyJucrkmrnyS?from=from_copylink) MonoBFT V0.9, Certificateless design
 
-* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
+* [[Issue] Scalable Mempool Design for DAG-Based Blockchain Consensus: Optimizing Transaction Propagation and Storage for Low-Latency and High-Throughput](https://nicholas.feishu.cn/wiki/UIEAwFWRhi7mXFkUxjbcTgIAndh?from=from_copylink): (MonoGraph) A better Mempool, that reliably distributes transactions, is the key enabler of a high-performance ledger. It should be separated from the consensus protocol altogether, leaving consensus only the job of ordering small fixed-size references. This leads to an overall system throughput being largely unaffected by consensus throughput.
 
-* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-free transaction confirmation, enabled by BFT broadcast and explicit dependency models, optimizes latency and throughput.
+* [[Issue] Consensus-less Transaction Confirmation: Optimizing Low-Latency, High-Throughput Blockchain Systems with BFT Broadcast and Explicit Dependency Models](https://nicholas.feishu.cn/wiki/Ss1NwgVQTiaX92kEsrwcpwtXnrb?from=from_copylink): An exploration of how consensus-less transaction confirmation, enabled by reliable broadcast(TurboCast) and explicit dependency models, optimizes latency and throughput.
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): Adopts DAG-based consensus for high-frequency environments; comparison with HotStuff.
 
+* [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
+
 * [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): Early research on MonoBFT based on HotStuff series.
 
-* [\[Issue\] 1 Slot, 1s Finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh): Achieving 1-slot, 1-second finality.
+* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
 
 #### *Execution*
 
-* [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): Merging DAG concurrency with blockchain finality guarantees.
-
 * [[Paper] LoomVM: A Secure and Deterministic Bytecode Virtual Machine Powered by RISC-V Frontend Compilation](https://nicholas.feishu.cn/wiki/KFw9wBl7ViOaTdke0YTcEqPtnsh?from=from_copylink): This paper presents LoomVM, a secure and deterministic bytecode virtual machine designed for on-chain execution, translating RISC-V binaries into verifiable, gas-aware bytecode to enable high-performance, analyzable, and zk-friendly smart contract execution in the Monoli blockchain.
+
+* [[Paper] MonoEVM+ : Optimizing the EVM through Consensus and Client Innovation (reth)](https://nicholas.feishu.cn/wiki/UZkmwTCQEiraRkkzHmjcarpdnwf?from=from_copylink): Monoli L1 supports EVM, and MonoEVM uses reth/revm as the execution engine base.
 
 * [[Agenda] Planning the Monoli Blockchain Smart Contract Language](https://nicholas.feishu.cn/wiki/AcMuwXbfZiBHaqkbox0comGnnZc?from=from_copylink): Define the requirements, architecture, and roadmap for Monoli’s Rust-based smart contract language and a VM supporting both Rust and Solidity smart contracts.
 
@@ -109,17 +112,19 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [\[Issue\] Multi-VM Equivalence and Intermediate Representation](https://nicholas.feishu.cn/wiki/DUmIw1IQuitqE1ki5A2cj3XLnqf): A comprehensive overview of Loom, Monoli’s unified execution environment, focusing on multi-VM equivalent execution and the role of an intermediate representation in enabling cross-VM compatibility.
 
+* [\[Issue\] Parallelism Meets Finality: A Hybrid DAG-Blockchain Execution Model](https://nicholas.feishu.cn/wiki/IJVnwmHITiEgrvkREvFcHBs4n9e): Merging DAG concurrency with blockchain finality guarantees.
+
 * [\[Issue\] Intra-chain Parallelism](https://nicholas.feishu.cn/wiki/QfuqwL318ipbyYkKmArc67Btn1g): Native scaling through intra-chain parallelism.
 
 #### *DB, DA*
 * [[Issue] Designing a DAG-Compatible, Multi-VM Scalable Storage Layer for Monoli](): A design exploration of Monoli’s scalable, DAG-compatible storage layer to support multi-VM execution.
 
 #### *Architecture*
-* [Gizmo](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Modular Rust SDK for building Monoli chains.
+* [Gizmo](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Gizmo is a Rust framework for building blockchains in a modular and scalable way. It is a set of libraries and primitives for building Monoli chains.
 
-* [\[Issue\] Rebuilding vs Refining](#): Comparing engineering-optimized vs innovation-driven architecture paths.
+- [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() Exploration of the next generation blockchain architecture, comparison of engineering optimization and innovation architectures.
 
-* [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases.
+* [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Monoli Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases.
 
 * [[Issue] Monoli Native Bridge: Seamless Interoperability for Realm Chains and Ethereum](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli native bridging solution, which enables users to securely and efficiently transfer messages and assets between Monoli realm chain and other major public chains.
 
@@ -134,6 +139,8 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 * [\[Issue\] Why Fully Transparent Trading Markets Are Beneficial](https://nicholas.feishu.cn/wiki/MS7aw1pHxiGbH4kcuLPcsvzenxg) Benefits and Merits of Transparent Trading Markets.
 * [\[Issue\] Feasibility of On-Chain Dark Pools](https://nicholas.feishu.cn/wiki/AqZpw7tPNiS8Ofk1zincP4oZnEd) Design and Implications of On-Chain Dark Pool Mechanisms.
 * [\[Paper\] Structured Finance of TradFi Inspires DeFi (Monoli Structured Derivatives Protocol)](https://nicholas.feishu.cn/wiki/DDwywlelQiqRfXko4F8cniY6nr9): Applying structured finance instruments (MTP & MCD) in DeFi.
+
+* [[Paper] $M Stablecoin, a synthetic dollar based crypto-native solution for money](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg?from=from_copylink)
 
 * [[Issue] Asset Tokenization Meets DeFi: Enabling On-Chain Structured Products with Native Yield Logic](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): A study of how asset tokenization and native yield logic power on-chain structured products, bridging DeFi innovation with traditional financial engineering.
 
