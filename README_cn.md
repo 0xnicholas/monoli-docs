@@ -43,10 +43,11 @@ Monoli DEX提供以下四种交易方式：
 Website: https://monoli.xyz/
 
 ### L1
-- [Monoli L1 [draft v0.8.4]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
-- [Monoli L1 [draft v0.7.2]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
+- [Monoli L1 (v0.8.4)](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc): 全新架构，在共识、网络和执行等方面进行底层革新（DAG-based无证书多级共识、支持多VM等）。
+- [Monoli L1 (v0.7.2)](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink): 对传统区块链架构的优化，高效共识（Hotstuff改），高性能EVM，部署WASM合约。
+- [Monoli L1 (early version)](): 总体基于Substrate框架的早期实现。
 - [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
-- [Monoli Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
+- [Monoli Wiki](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe?from=from_copylink)
 
 ### DEX
 - [Monoli Perp DEX [v1.2.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
@@ -57,15 +58,17 @@ Website: https://monoli.xyz/
 ### Ecosystem
 * [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。
 
-* [**Plaid**](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，提供精确交易，并为Monoli的链上金融生态系统形成一个共享流动性层。
+* [**Plaid**](https://nicholas.feishu.cn/wiki/IrgFwa9ijikrI7k1sx3c1yjsnxa?from=from_copylink): Plaid是Monoli的原生链上CLOB协议，为DeFi应用程序提供统一、高效的流动性，并为Monoli的链上金融生态系统形成一个共享流动性层。
 
 * [**Sunwell**](https://nicholas.feishu.cn/wiki/UOA6w3orwihjEIkHU6scxfWTnUe?from=from_copylink): Sunwell协议是将结构性金融商品变为链上金融原语的关键一步，旨在建立一套支持资产代币化、原生收益产生与结构化包装的链上协议，面向高效链上融资、风险定价与收益工程的 DeFi 应用。
 
-* **Dakai**: 以意图为中心的协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
+* [**Monoli Realm-Chain**](): Monoli领域链，旨在支持领域专用链（Domain-Specific Chains）的快速构建与优化。通过重用 Monoli L1 的核心模块与工具，Realm Chain 在保障去中心化与安全性的同时，为特定用例（如稳定币支付）提供高性能、可扩展与合规友好的基础设施。
 
 * [Monoli **Bridge**](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli Bridge是一个原生的跨链网关，它支持在Monoli和以太坊（以及更多）之间快速、低成本和安全的资产转移，通过去中心化的架构支持无缝互操作。
 
 * **Octa**: 一个去中心化的MPC签名者网络，旨在通过零信任密码学模型和高性能的去中心化架构解决区块链互操作性挑战。
+
+* **Dakai**: 以意图为中心的协议，引入了一个声明式交易模型，将执行的复杂性从用户转移到求解器网络。
 
 * **Bagel Wallet**: 一个支持意图的可编程钱包，它允许用户表达所需的结果，同时抽象出交易的复杂性。
 
@@ -82,9 +85,9 @@ Website: https://monoli.xyz/
 
 * [\[Issue\] A DAG-Structured BFT Protocol for High-Frequency Finality](https://nicholas.feishu.cn/wiki/Bpc0wOMBEiZhkpko1gucyHlsnCc): 采用DAG结构改进共识机制，并对比Hotstuff方案。
 
-* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): 较早版本对MonoBFT的研究，基于HotStuff系列。
+* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): 较早版本对MonoBFT(v0.7)的研究，基于HotStuff系列。
 
-* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
+* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh):
 
 #### *Execution*
 

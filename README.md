@@ -54,10 +54,11 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 ### L1
 
-* [Monoli L1 \[draft v0.8.4\]](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
-* [Monoli L1 \[draft v0.7.2\]](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc)
+* [Monoli L1 (v0.8.4)](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg) (main doc)
+* [Monoli L1 (v0.7.2)](https://nicholas.feishu.cn/wiki/RMAlwhsbZi1lYTkGheNcip7gnnc?from=from_copylink)
+* [Monoli L1 (early version)]()
 * [Monoli L1 Tech Book](https://nicholas.feishu.cn/wiki/OPJuwcVayi27k5klYeYcR2ixnSb)
-* [Developer Docs](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe)
+* [Monoli Wiki](https://nicholas.feishu.cn/wiki/JpM6waMvIijcohkSuUncbVHNnUe?from=from_copylink)
 
 ### DEX
 
@@ -94,9 +95,9 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [[Issue] DAG-Based Transaction Ordering Without Consensus: Designing a Verifiable Sequencer via TVA](https://nicholas.feishu.cn/wiki/AXvWw3pnBix6bIkUUCOc1rQpnnc?from=from_copylink): This issue explores integrating TVA into DAG-based blockchains to achieve deterministic, verifiable transaction ordering without relying on consensus-layer sequencing, enabling auditable, fair, and high-throughput parallel execution.
 
-* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): Early research on MonoBFT based on HotStuff series.
+* [\[Issue\] High Performance, Fast Finality, Fork-Resistant BFT](https://nicholas.feishu.cn/wiki/QHzww7kL4iTMwxkiqNLcadAQnLf): Early research on MonoBFT(v0.7) based on HotStuff series.
 
-* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh)
+* [[Issue] n slot, ms finality, or near-instant finality](https://nicholas.feishu.cn/wiki/UbVpw5ccLilDt0k2g4xcFR2LnPh):
 
 #### *Execution*
 
