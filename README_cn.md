@@ -52,8 +52,8 @@ Website: https://monoli.xyz/
 ### DEX
 - [Monoli Perp DEX [v1.2.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 - [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
+- [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d) Monoli DEX 先行版，主要用来测试运行业务逻辑，评估架构和技术选型。
 - [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
-- [Monoli DEX Tech Docs](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
 ### Ecosystem
 * [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。
@@ -114,6 +114,8 @@ Website: https://monoli.xyz/
 - [Gizmo: Monoli L1 Framework & SDK](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g?from=from_copylink) Gizmo是一个Rust框架，用于以模块化和可扩展的方式构建区块链。它是一组用于构建Monoli链的库和原语
 
 - [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() 下一代区块链架构探索，工程优化型和革新型架构对比
+
+- [[Issue] Shared Security Models for Realm Chains in the Monoli Ecosystem](https://nicholas.feishu.cn/wiki/PIAEwG3ZYiQoPPkaGhKcB8lKn4g?from=from_copylink): Monoli L1, RealmChain安全性复用机制， 采用Restaking和租用方案。
 
 - [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Monoli Realm Chain 是一种模块化 L1 区块链架构，旨在支持领域专用链（Domain-Specific Chains）的快速构建与优化。通过重用 Monoli L1 的核心模块与工具，Realm Chain 在保障去中心化与安全性的同时，为特定用例（如稳定币支付）提供高性能、可扩展与合规友好的基础设施。
 

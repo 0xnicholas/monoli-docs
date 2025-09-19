@@ -13,7 +13,6 @@ Monoli is designed to push the performance limits of Layer 1 blockchains by deco
 With a target throughput of **240,000 TPS**, Monoli aims to deliver a Web2-grade user experience for DeFi, high-frequency trading (HFT), and on-chain applications. Key innovations and enhancements include:
 
 * **MonoBFT**, A high-frequency finality BFT protocol built on DAG structures (earlier based on a HotStuff derivative).
-* **TVA**, A time-verifiable asynchronous execution model that deterministically pre-orders transactions while enabling asynchronous execution.
 * **ForceSync**, Monoli’s proprietary state and block synchronization system that ensures robust node consistency.
 * **Execution Framework**, A VM-agnostic execution environment supporting diverse smart contract runtimes.
 * **Loom**, A hybrid VM execution network, centered around **LoomVM**, a secure and deterministic bytecode virtual machine compiled from RISC-V (replacing rWASM). It supports multi-VM equivalent execution environments.
@@ -21,6 +20,7 @@ With a target throughput of **240,000 TPS**, Monoli aims to deliver a Web2-grade
 * **MonoDB**, A multi-tiered database built on top of RocksDB, optimized for performance and scalability.
 * **TurboCast**, A high-efficiency networking layer using adaptive broadcast trees for rapid message propagation.
 * **LiquiBoost**, A native on-chain incentive protocol designed to reward both validators and developers.
+* **Realm Chain**, Monoli Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases.
 
 In addition, Monoli provides a modular Rust SDK and framework named **Gizmo** for building custom blockchain systems.
 
@@ -64,8 +64,8 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [Monoli Perp DEX \[v1.2.2\]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 * [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
+* [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d) Monoli DEX prime edition technical docs. this edition is mainly used to test,review architectual and technical options.
 * [DEX Risk Management and Case Studies](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
-* [DEX Technical Documentation](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d)
 
 ### Ecosystem
 * [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic dollar protocol on Monoli, providing a crypto-native stablecoin backed by delta-neutral derivative strategies. $M combines peg stability with intrinsic yield, making it a robust foundation for on-chain financial applications.
@@ -123,9 +123,11 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 #### *Architecture*
 * [Gizmo](https://nicholas.feishu.cn/wiki/PN5iw3MN7iLKWVkeLpmclVaUn9g): Gizmo is a Rust framework for building blockchains in a modular and scalable way. It is a set of libraries and primitives for building Monoli chains.
 
-- [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() Exploration of the next generation blockchain architecture, comparison of engineering optimization and innovation architectures.
+* [[Issue] Rebuilding vs Refining: Architectural Paradigms for High-Performance Blockchains]() Exploration of the next generation blockchain architecture, comparison of engineering optimization and innovation architectures.
 
-* [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Monoli Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases.
+* [[Issue] Shared Security Models for Realm Chains in the Monoli Ecosystem](https://nicholas.feishu.cn/wiki/PIAEwG3ZYiQoPPkaGhKcB8lKn4g?from=from_copylink):
+
+* [[Paper] Realm Chain: Modular L1 Architecture for Domain-Specific Blockchain](https://nicholas.feishu.cn/wiki/JgXCwVHenimPwdkJlPbcjhuSnHd?from=from_copylink): Monoli Realm Chain is a modular L1 blockchain architecture designed to support the rapid construction and optimization of Domain-Specific Chains. By reusing core modules and tools from Monoli L1, Realm Chain provides a high-performance, scalable, and compliance-friendly infrastructure for specific use cases(eg. stablecoin payments).
 
 * [[Issue] Monoli Native Bridge: Seamless Interoperability for Realm Chains and Ethereum](https://nicholas.feishu.cn/wiki/EqCcw81P1ix9qikLC1QcU6A4nhe?from=from_copylink): Monoli native bridging solution, which enables users to securely and efficiently transfer messages and assets between Monoli realm chain and other major public chains.
 
