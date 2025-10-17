@@ -1,7 +1,7 @@
 > 该文档索引包括Monoli主要研究项目和课题
 
 ## About Monoli
-Monoli代表了[Lico labs]()研究的一个高性能区块链L1和其主要DeFi生态项目，目前处于产研深入探索阶段。Monoli旨在创建一个超高效区块链基础设施和结构化金融生态系统。它包括三个主要项目： [Monoli L1]()，[Monoli Perp DEX]()及[Monoli Vaults]()。
+Monoli代表了[Lico labs]()研究的一个高性能区块链L1和其主要DeFi生态项目，目前处于产研深入探索阶段。Monoli旨在创建一个超高效区块链基础设施和结构化金融生态系统。它包括三个主要项目： [Monoli L1](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg?from=from_copylink)，[Monoli Perp DEX](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d?from=from_copylink)及[Monoli Platform](https://nicholas.feishu.cn/wiki/IjZ6wPIAUiAuNGkXneicQKMfn2K?from=from_copylink)。
 
 ## Monoli L1
 Monoli旨在通过全方面加强或重构区块链Layer 1的各个部分来提升区块链性能，目标为240,000TPS，为DeFi、高频交易和dApp提供web2级别的链上体验。
@@ -38,6 +38,13 @@ Monoli DEX提供以下四种交易方式：
 - **Funding Rate收益交易**：资金费率收益交易使交易者能够表达其对资金利率的看法。看涨资金利率的交易者可以开立多头头寸，而看跌的交易者可以开立空头头寸。同时还使具有浮动Funding rate敞口的交易者能够对冲其Funding rate payment/receivables。
 - **Vaults**：包括做市策略Vaults（用户自定义做市和平台做市 MLP, Monoli Liquidity Provider）；Funding Rate收益交易Vaults；结构化Vaults（MTP, Monoli Tranche Perp Vault），以及信用违约风险衍生品库（MCD, Monoli Credit Default Vault）。
 
+## Monoli Platform
+Monoli Platform是Monoli公链的生态开发平台。同时独立来看，作为一种跨web系统的开放集成平台，也是Crypto世界第一个iPaaS产品，使开发者能高效建设web3应用和相关跨系统产品。
+
+该平台首先是开发者构建web3应用的可靠基础设施，提供全方面的通用和专用领域API服务，避免了区块链的复杂性，使开发者能够使用API-led的方式高效开发web3相关应用。
+
+同时其也是一个企业级混合集成平台，通过API集成能力和区块链引擎，使企业能够通过统一的API网关，既能对接传统信息管理系统（SaaS/ERP/Fintech...），也能无缝接入Monoli的区块链网络，实现跨系统、跨链、低延迟的数据与业务流集成。
+
 ## Resources
 
 Website: https://monoli.xyz/
@@ -52,8 +59,11 @@ Website: https://monoli.xyz/
 ### DEX
 - [Monoli Perp DEX [v1.2.2]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 - [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
-- [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d) Monoli DEX 先行版，主要用来测试运行业务逻辑，评估架构和技术选型。
+- [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d): Monoli DEX 先行版，主要用来测试运行业务逻辑，评估架构和技术选型。
 - [DEX Risk Management and Cases](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
+
+### Platform
+- [Monoli Platform](https://nicholas.feishu.cn/wiki/IjZ6wPIAUiAuNGkXneicQKMfn2K?from=from_copylink) (main doc)
 
 ### Ecosystem
 * [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): Monoli上的一个合成美元协议，提供了一个由delta中性策略支持的加密原生稳定币。$M结合了挂钩稳定性和内在收益率，使其成为链上金融应用的坚实基础。

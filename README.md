@@ -4,7 +4,7 @@
 
 ## About Monoli
 
-**Monoli** is a high-performance Layer 1 blockchain and its associated native DeFi ecosystem, developed under [Lico labs](). Currently in an intensive R\&D phase, Monoli aims to create an ultra-efficient blockchain infrastructure and a structured financial ecosystem. The Monoli ecosystem consists of three core pillars: [Monoli L1](), [Monoli Perp DEX](), and [Monoli Vaults]().
+**Monoli** is a high-performance Layer 1 blockchain and its associated native DeFi ecosystem, developed under [Lico labs](). Currently in an intensive R\&D phase, Monoli aims to create an ultra-efficient blockchain infrastructure and a structured financial ecosystem. The Monoli ecosystem consists of three core pillars: [Monoli L1](https://nicholas.feishu.cn/wiki/A301w7iE5ikIgikRasScq9OxnYg?from=from_copylink), [Monoli Perp DEX](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d?from=from_copylink), and [Monoli Platform](https://nicholas.feishu.cn/wiki/IjZ6wPIAUiAuNGkXneicQKMfn2K?from=from_copylink).
 
 ## Monoli L1
 
@@ -48,6 +48,13 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
   * Structured derivative vaults (**MTP**, Monoli Tranche Perp Vault).
   * Credit risk protection vaults (**MCD**, Monoli Credit Default Vault).
 
+## Monoli Platform
+Monoli Platform is the ecosystem development platform for the Monoli public chain. Independently, it also serves as an open integration platform spanning the web systems and stands as the crypto world's first iPaaS product, enabling developers to efficiently build Web3 applications and related cross-system products.
+
+First and foremost, this platform provides reliable infrastructure for developers to construct Web3 applications. It offers comprehensive general-purpose and domain-specific API services, abstracting away blockchain complexity so developers can efficiently build Web3-related applications using an API-led approach.
+
+Simultaneously, it functions as an enterprise-grade hybrid integration platform. Through its API integration capabilities and blockchain engine, businesses can leverage a unified API gateway to connect with traditional information management systems (SaaS/ERP/Fintech...) while seamlessly integrating with Monoli's blockchain network. This achieves cross-system, cross-chain, low-latency integration of data and business flows.
+
 ## Resources
 
 **Website**: [https://monoli.xyz](https://monoli.xyz)
@@ -64,8 +71,12 @@ Beyond standard perps, Monoli DEX also offers structured perpetual products:
 
 * [Monoli Perp DEX \[v1.2.2\]](https://nicholas.feishu.cn/wiki/Ecy3wEeKyi09TXkbupncOVosn0d) (main doc)
 * [DEX Product Prototype](https://nicholas.feishu.cn/wiki/Rqknwd9yHiMa8ykWIkOcoHGGned)
-* [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d) Monoli DEX prime edition technical docs. this edition is mainly used to test,review architectual and technical options.
+* [Perpetual DEX Tech Book (prime edition)](https://nicholas.feishu.cn/wiki/CvqYwM7eliHImLkSGmPcSPByn6d): Monoli DEX prime edition technical docs. this edition is mainly used to test,review architectual and technical options.
 * [DEX Risk Management and Case Studies](https://nicholas.feishu.cn/wiki/Z4WawXpb5iqz7QkCazrcWFqxnXe)
+
+### Platform
+
+* [Monoli Platform](https://nicholas.feishu.cn/wiki/IjZ6wPIAUiAuNGkXneicQKMfn2K?from=from_copylink) (main doc)
 
 ### Ecosystem
 * [**Monogram**](https://nicholas.feishu.cn/wiki/IQlGwoq4QiyGGFk5Y0rcU51Ingg): A synthetic dollar protocol on Monoli, providing a crypto-native stablecoin backed by delta-neutral derivative strategies. $M combines peg stability with intrinsic yield, making it a robust foundation for on-chain financial applications.
